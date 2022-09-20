@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a parameterized constructor in Song.java class">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created toString methods">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +153,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663676660497</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="created getter and setter method in Song.java class">
+      <created>1663676741717</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676741717</updated>
+    </task>
+    <task id="LOCAL-00016" summary="created a equals and hashcode in the Song.java">
+      <created>1663676822055</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676822055</updated>
+    </task>
+    <task id="LOCAL-00017" summary="created toString methods">
+      <created>1663676962014</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676962014</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,7 +203,10 @@
     <MESSAGE value="added the fields in the Song.java class" />
     <MESSAGE value="created a no argument constructor" />
     <MESSAGE value="created a parameterized constructor in Song.java class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a parameterized constructor in Song.java class" />
+    <MESSAGE value="created getter and setter method in Song.java class" />
+    <MESSAGE value="created a equals and hashcode in the Song.java" />
+    <MESSAGE value="created toString methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="created toString methods" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
