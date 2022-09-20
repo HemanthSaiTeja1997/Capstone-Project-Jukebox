@@ -17,4 +17,14 @@ public class PlayList {
 
     public PlayList() {
     }
+
+    public PlayList(int playListId, String playListName, String playListArtist, String playListGenres, String playListDuration, String playListURL, int songId) {
+        this.playListId = playListId;
+        this.playListName = playListName;
+        this.playListArtist = playListArtist;
+        this.playListGenres = playListGenres;
+        this.playListDuration = playListDuration;
+        this.playListURL = playListURL;
+        this.songId = songId;
+    }
 }
