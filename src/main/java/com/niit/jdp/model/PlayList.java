@@ -27,4 +27,60 @@ public class PlayList {
         this.playListURL = playListURL;
         this.songId = songId;
     }
+
+    public int getPlayListId() {
+        return playListId;
+    }
+
+    public void setPlayListId(int playListId) {
+        this.playListId = playListId;
+    }
+
+    public String getPlayListName() {
+        return playListName;
+    }
+
+    public void setPlayListName(String playListName) {
+        this.playListName = playListName;
+    }
+
+    public String getPlayListArtist() {
+        return playListArtist;
+    }
+
+    public void setPlayListArtist(String playListArtist) {
+        this.playListArtist = playListArtist;
+    }
+
+    public String getPlayListGenres() {
+        return playListGenres;
+    }
+
+    public void setPlayListGenres(String playListGenres) {
+        this.playListGenres = playListGenres;
+    }
+
+    public String getPlayListDuration() {
+        return playListDuration;
+    }
+
+    public void setPlayListDuration(String playListDuration) {
+        this.playListDuration = playListDuration;
+    }
+
+    public String getPlayListURL() {
+        return playListURL;
+    }
+
+    public void setPlayListURL(String playListURL) {
+        this.playListURL = playListURL;
+    }
+
+    public int getSongId() {
+        return songId;
+    }
+
+    public void setSongId(int songId) {
+        this.songId = songId;
+    }
 }
