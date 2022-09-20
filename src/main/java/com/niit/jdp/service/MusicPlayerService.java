@@ -25,8 +25,14 @@ public class MusicPlayerService {
             clip.loop(Clip.LOOP_CONTINUOUSLY);
             // 7. start the sound file
             clip.start();
+            // 8. pause the current thread for the time the song is being played
+            long songDurationInMilliseconds = clip.getMicrosecondLength() / 1000L;
+            Thread.sleep(songDurationInMilliseconds);
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
             System.err.println(exception.getMessage());
+            exception.printStackTrace();
+        } catch (InterruptedException exception) {
+            System.err.println("song thread was interrupted");
         }
     }
 }
