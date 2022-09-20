@@ -91,11 +91,28 @@ public class PlayList {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         PlayList playList = (PlayList) o;
-        return playListId == playList.playListId && songId == playList.songId && Objects.equals(playListName, playList.playListName) && Objects.equals(playListArtist, playList.playListArtist) && Objects.equals(playListGenres, playList.playListGenres) && Objects.equals(playListDuration, playList.playListDuration) && Objects.equals(playListURL, playList.playListURL);
+        return playListId == playList.playListId && songId == playList.songId && Objects.equals(playListName,
+                playList.playListName) && Objects.equals(playListArtist, playList.playListArtist) &&
+                Objects.equals(playListGenres, playList.playListGenres) && Objects.equals(playListDuration,
+                playList.playListDuration) && Objects.equals(playListURL, playList.playListURL);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(playListId, playListName, playListArtist, playListGenres, playListDuration, playListURL, songId);
+        return Objects.hash(playListId, playListName, playListArtist, playListGenres, playListDuration, playListURL,
+                songId);
+    }
+
+    @Override
+    public String toString() {
+        return "PlayList{" +
+                "playListId=" + playListId +
+                ", playListName='" + playListName + '\'' +
+                ", playListArtist='" + playListArtist + '\'' +
+                ", playListGenres='" + playListGenres + '\'' +
+                ", playListDuration='" + playListDuration + '\'' +
+                ", playListURL='" + playListURL + '\'' +
+                ", songId=" + songId +
+                '}';
     }
 }
