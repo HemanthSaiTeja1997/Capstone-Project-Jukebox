@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="add the dependencies of mysql-connector-java">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jukebox.database/playlist.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jukebox.database/song.sql" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a PlayList.java class in the model package">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +76,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663674903641</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="created song.sql and playlist.sql in the jukebox.database directory">
+      <created>1663675219584</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675219584</updated>
+    </task>
+    <task id="LOCAL-00005" summary="created a song class in the model package">
+      <created>1663675330334</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675330334</updated>
+    </task>
+    <task id="LOCAL-00006" summary="created a PlayList.java class in the model package">
+      <created>1663675418344</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675418344</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,7 +115,10 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="changed the source and target from 18 to 11" />
     <MESSAGE value="add the dependencies of mysql-connector-java" />
-    <option name="LAST_COMMIT_MESSAGE" value="add the dependencies of mysql-connector-java" />
+    <MESSAGE value="created song.sql and playlist.sql in the jukebox.database directory" />
+    <MESSAGE value="created a song class in the model package" />
+    <MESSAGE value="created a PlayList.java class in the model package" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a PlayList.java class in the model package" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
