@@ -6,7 +6,7 @@
 
 package com.niit.jdp;
 
-public class JukeboxImpl {
+public class JukeboxImplementation {
     public static void main(String[] args) {
 
     }

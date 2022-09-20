@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created toString methods">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a song directory and added the song">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/JukeboxImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +41,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "C:/Users/Hemanth Sai Teja/IdeaProjects/Capstone-Project-Jukebox/src/main/resources/songs",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hemanth Sai Teja\IdeaProjects\Capstone-Project-Jukebox\src\main\resources\songs" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -174,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663676962014</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="created a song directory and added the song">
+      <created>1663677172486</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677172487</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +220,8 @@
     <MESSAGE value="created getter and setter method in Song.java class" />
     <MESSAGE value="created a equals and hashcode in the Song.java" />
     <MESSAGE value="created toString methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="created toString methods" />
+    <MESSAGE value="created a song directory and added the song" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a song directory and added the song" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
