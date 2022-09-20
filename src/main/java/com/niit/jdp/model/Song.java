@@ -15,4 +15,7 @@ public class Song {
     private String duration;
     private String url;
 
+    public Song() {
+    }
+
 }
