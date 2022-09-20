@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a PlayList.java class in the model package">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a JukeboxImpl.java class in the com.niit.jdp package with main method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +98,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663675418344</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="created a DatabaseService.java class in the service package">
+      <created>1663675518281</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675518281</updated>
+    </task>
+    <task id="LOCAL-00008" summary="created a MusicPlayerService.java class in the service package">
+      <created>1663675558853</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675558853</updated>
+    </task>
+    <task id="LOCAL-00009" summary="created a JukeboxImpl.java class in the com.niit.jdp package with main method">
+      <created>1663675715104</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663675715104</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,7 +140,10 @@
     <MESSAGE value="created song.sql and playlist.sql in the jukebox.database directory" />
     <MESSAGE value="created a song class in the model package" />
     <MESSAGE value="created a PlayList.java class in the model package" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a PlayList.java class in the model package" />
+    <MESSAGE value="created a DatabaseService.java class in the service package" />
+    <MESSAGE value="created a MusicPlayerService.java class in the service package" />
+    <MESSAGE value="created a JukeboxImpl.java class in the com.niit.jdp package with main method" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a JukeboxImpl.java class in the com.niit.jdp package with main method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
