@@ -32,4 +32,12 @@ public class DatabaseService {
         return connection != null;
     }
 
+    public void printConnectionStatus() {
+        if (connection != null) {
+            System.out.println("\u001B[32m Connected to the database.\u001B[0m");
+        } else {
+            System.err.println("Not connected to the database");
+
+        }
+    }
 }
