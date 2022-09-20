@@ -7,4 +7,11 @@
 package com.niit.jdp.model;
 
 public class PlayList {
+    private int playListId;
+    private String playListName;
+    private String playListArtist;
+    private String playListGenres;
+    private String playListDuration;
+    private String playListURL;
+    private int songId;
 }
