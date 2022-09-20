@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="create a file object that contains songpath">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="create a object of clip class  from audioSystem">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -312,7 +312,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663696985780</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="create a object of AudioInputStream class that songFile">
+      <created>1663697282174</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1663697282174</updated>
+    </task>
+    <task id="LOCAL-00038" summary="create a object of clip class  from audioSystem">
+      <created>1663697417115</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1663697417115</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,8 +341,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the fields in the Song.java class" />
-    <MESSAGE value="created a no argument constructor" />
     <MESSAGE value="created a parameterized constructor in Song.java class" />
     <MESSAGE value="created getter and setter method in Song.java class" />
     <MESSAGE value="created a equals and hashcode in the Song.java" />
@@ -352,7 +364,9 @@
     <MESSAGE value="created a printConnectionstatus in DatabaseService class" />
     <MESSAGE value="created a play method in the MusicPlayerService class" />
     <MESSAGE value="create a file object that contains songpath" />
-    <option name="LAST_COMMIT_MESSAGE" value="create a file object that contains songpath" />
+    <MESSAGE value="create a object of AudioInputStream class that songFile" />
+    <MESSAGE value="create a object of clip class  from audioSystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="create a object of clip class  from audioSystem" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
