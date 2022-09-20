@@ -23,6 +23,8 @@ public class MusicPlayerService {
             clip.open(audioInputStream);
             // 6. set a loop for the sound file
             clip.loop(Clip.LOOP_CONTINUOUSLY);
+            // 7. start the sound file
+            clip.start();
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
             System.err.println(exception.getMessage());
         }
