@@ -7,6 +7,8 @@
 package com.niit.jdp.service;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DatabaseService {
     //a method that can connect to Database
@@ -23,4 +25,11 @@ public class DatabaseService {
     public Connection getConnection() {
         return connection;
     }
+
+    public boolean connect() throws ClassNotFoundException, SQLException {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+        return connection != null;
+    }
+
 }
