@@ -16,4 +16,7 @@ public class DatabaseService {
     private static final String USERNAME = "root";
     private Connection connection;
 
+    public DatabaseService() {
+        this.connection = null;
+    }
 }
