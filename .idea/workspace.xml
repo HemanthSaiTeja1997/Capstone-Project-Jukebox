@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a connect method that returns connection in the DatabaseService class">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/DatabaseService.java" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a printConnectionstatus in DatabaseService class">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/d/5d5323783bdf3661905efe3c18da2468f4f85e54" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663695517557</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="created a printConnectionstatus in DatabaseService class">
+      <created>1663695970568</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1663695970568</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,7 +316,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created a JukeboxImpl.java class in the com.niit.jdp package with main method" />
     <MESSAGE value="created a SongRepository.java class in the repository package" />
     <MESSAGE value="created a PlayListRepository.java class in the repository package" />
     <MESSAGE value="added the fields in the Song.java class" />
@@ -331,7 +340,8 @@
     <MESSAGE value="created a parameterized constructors in DatabaseService class" />
     <MESSAGE value="created a getConnection method that returns connection in the DatabaseService class" />
     <MESSAGE value="created a connect method that returns connection in the DatabaseService class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a connect method that returns connection in the DatabaseService class" />
+    <MESSAGE value="created a printConnectionstatus in DatabaseService class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a printConnectionstatus in DatabaseService class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

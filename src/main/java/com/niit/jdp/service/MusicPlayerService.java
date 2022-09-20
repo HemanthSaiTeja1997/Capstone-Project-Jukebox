@@ -7,4 +7,7 @@
 package com.niit.jdp.service;
 
 public class MusicPlayerService {
+    public void play(String songPath) {
+
+    }
 }
