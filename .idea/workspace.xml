@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="used the jukebox database">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a table song in the jukebox database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jukebox.database/song.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jukebox.database/song.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jukebox.database/playlist.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jukebox.database/playlist.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663689872137</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="created a table song in the jukebox database">
+      <created>1663690411030</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1663690411030</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +272,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add the dependencies of mysql-connector-java" />
     <MESSAGE value="created song.sql and playlist.sql in the jukebox.database directory" />
     <MESSAGE value="created a song class in the model package" />
     <MESSAGE value="created a PlayList.java class in the model package" />
@@ -290,7 +296,8 @@
     <MESSAGE value="created tostring method for PlayList.java" />
     <MESSAGE value="created a database jukebox" />
     <MESSAGE value="used the jukebox database" />
-    <option name="LAST_COMMIT_MESSAGE" value="used the jukebox database" />
+    <MESSAGE value="created a table song in the jukebox database" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a table song in the jukebox database" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
