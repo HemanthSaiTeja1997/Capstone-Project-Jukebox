@@ -14,4 +14,7 @@ public class PlayList {
     private String playListDuration;
     private String playListURL;
     private int songId;
+
+    public PlayList() {
+    }
 }
