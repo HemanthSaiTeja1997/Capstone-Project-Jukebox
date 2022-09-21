@@ -104,10 +104,22 @@ public class SongRepository {
             preparedStatement.setString(1, genre);
             //4. execute the query
             ResultSet resultSet = preparedStatement.executeQuery();
-
+            // 5. check if the result set is empty
+            while (resultSet.next()) {
+                // 6. fetch the values of the current row from the result set
+                int songId = resultSet.getInt("song_Id");
+                String songName = resultSet.getString("name");
+                String album = resultSet.getString("album");
+                String artistName = resultSet.getString("artist");
+                String gener = resultSet.getString("genre");
+                String duration = resultSet.getString("duration");
+                String uRL = resultSet.getString("url");
+                // 7. create a song object using the values fetched from the result set
+                Song song = new Song(songId, songName, album, artistName, gener, duration, uRL);
+                songList.add(song);
+                songList.sort(Comparator.comparing(Song::getName));
+            }
+            return songList;
         }
-
-        return null;
     }
-
 }
