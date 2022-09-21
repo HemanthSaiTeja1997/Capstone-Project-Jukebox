@@ -58,4 +58,9 @@ public class SongRepository {
         }
         return numberOfRowsAffected > 0;
     }
+
+    public void searchbyartist(List<Song> songList, String artist) {
+
+
+    }
 }
