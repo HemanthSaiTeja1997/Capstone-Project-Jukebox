@@ -56,6 +56,8 @@ insert into `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `genre`, `ur
  select*from `jukebox`.`song` where (`artist`='Weeknd');
  --select song list from song table by genre name
  select*from `jukebox`.`song` where (`genre`='Industrial Metal');
+ --select song list from song table by genre name
+ SELECT*From `jukebox`.`song` where (`album`='Naruto');
 
 
 
