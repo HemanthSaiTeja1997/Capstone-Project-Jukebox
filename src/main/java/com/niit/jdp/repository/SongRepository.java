@@ -70,7 +70,13 @@ public class SongRepository {
             PreparedStatement preparedStatement = connection.prepareStatement(searchQuery);
             // 3. set the values of the query parameters
             preparedStatement.setString(1, artist);
+            //4. execute the query
+            ResultSet resultSet = preparedStatement.executeQuery();
             // 5. check if the result set is empty
+            while (resultSet.next()) {
+                // 6. fetch the values of the current row from the result set
+
+            }
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
