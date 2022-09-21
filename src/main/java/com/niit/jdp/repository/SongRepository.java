@@ -124,6 +124,8 @@ public class SongRepository {
     }
 
     public List<Song> searchByAlbumAndSortByName(Connection connections, String url) {
+        // 1. write the query for selecting a song object from the `song` table
+        String searchQuery = "SELECT*From `jukebox`.`song` where (`album`=?);";
 
         return null;
     }
