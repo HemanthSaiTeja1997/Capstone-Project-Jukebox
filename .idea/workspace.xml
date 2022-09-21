@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="inserted songs in the song table">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="create a statement object for searcgQuery">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jukebox.database/song.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jukebox.database/song.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,20 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00006" summary="created a PlayList.java class in the model package">
-      <created>1663675418344</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675418344</updated>
-    </task>
-    <task id="LOCAL-00007" summary="created a DatabaseService.java class in the service package">
-      <created>1663675518281</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675518281</updated>
     </task>
     <task id="LOCAL-00008" summary="created a MusicPlayerService.java class in the service package">
       <created>1663675558853</created>
@@ -424,7 +409,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663752020953</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="created a method to select song list based on artist name">
+      <created>1663752552770</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1663752552770</updated>
+    </task>
+    <task id="LOCAL-00056" summary="create a statement object for searcgQuery">
+      <created>1663752715655</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1663752715655</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,8 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created fields in the DatabaseService.java class" />
-    <MESSAGE value="created a parameterized constructors in DatabaseService class" />
     <MESSAGE value="created a getConnection method that returns connection in the DatabaseService class" />
     <MESSAGE value="created a connect method that returns connection in the DatabaseService class" />
     <MESSAGE value="created a printConnectionstatus in DatabaseService class" />
@@ -464,7 +461,9 @@
     <MESSAGE value="set the values of the query parameters" />
     <MESSAGE value="create a method ti search and sort by artist" />
     <MESSAGE value="inserted songs in the song table" />
-    <option name="LAST_COMMIT_MESSAGE" value="inserted songs in the song table" />
+    <MESSAGE value="created a method to select song list based on artist name" />
+    <MESSAGE value="create a statement object for searcgQuery" />
+    <option name="LAST_COMMIT_MESSAGE" value="create a statement object for searcgQuery" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

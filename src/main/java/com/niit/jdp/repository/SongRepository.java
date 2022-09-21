@@ -68,6 +68,10 @@ public class SongRepository {
         // 2. create a statement object
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(searchQuery);
+            // 3. set the values of the query parameters
+            preparedStatement.setString(1, artist);
+            // 5. check if the result set is empty
+
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
