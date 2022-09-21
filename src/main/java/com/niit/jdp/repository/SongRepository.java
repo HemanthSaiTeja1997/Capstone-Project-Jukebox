@@ -18,7 +18,8 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
 
-public class SongRepository {
+public class SongRepository implements Repository<Song> {
+    @Override
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
         // 1. write the query for inserting a new Song object into the `song` table
         String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `genre`, `duration`,"
@@ -39,6 +40,7 @@ public class SongRepository {
         return numberOfRowsAffected > 0;
     }
 
+    @Override
     public List<Song> getAllSongs(Connection connection) throws SQLException {
         List<Song> songList = new ArrayList<>();
         //create SQL query to retrieve all the rows from the Song table
@@ -61,6 +63,7 @@ public class SongRepository {
         return songList;
     }
 
+    @Override
     public List<Song> searchByArtistAndSortByName(Connection connection, String artist) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String searchQuery = "SELECT*From `jukebox`.`song` where (`artist`=?);";
@@ -91,6 +94,7 @@ public class SongRepository {
         }
     }
 
+    @Override
     public List<Song> searchByGenreAndSortByName(Connection connection, String genre) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String searchQuery = "SELECT*From `jukebox`.`song` where (`genre`=?);";
@@ -120,6 +124,7 @@ public class SongRepository {
         }
     }
 
+    @Override
     public List<Song> searchByAlbumAndSortByName(Connection connection, String album) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String searchQuery = "SELECT*From `jukebox`.`song` where (`album`=?);";
@@ -149,6 +154,7 @@ public class SongRepository {
         }
     }
 
+    @Override
     public void songs(Connection connection) throws SQLException {
         Scanner scanner = new Scanner(System.in);
         SongRepository songRepository = new SongRepository();

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="changed the syntax">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added add song method in the song method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
@@ -17,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -80,13 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00033" summary="created a connect method that returns connection in the DatabaseService class">
-      <created>1663695517556</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1663695517557</updated>
     </task>
     <task id="LOCAL-00034" summary="created a printConnectionstatus in DatabaseService class">
       <created>1663695970568</created>
@@ -424,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663784582809</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="added add song method in the song method">
+      <created>1663788146957</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1663788146957</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="inserted songs in the song table" />
     <MESSAGE value="created a method to select song list based on artist name" />
     <MESSAGE value="create a statement object for searcgQuery" />
     <MESSAGE value="set the values for the query parameter" />
@@ -464,7 +465,8 @@
     <MESSAGE value="created a song method for selecting different options from jukebox" />
     <MESSAGE value="added all the methodology for song method" />
     <MESSAGE value="changed the syntax" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the syntax" />
+    <MESSAGE value="added add song method in the song method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added add song method in the song method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
