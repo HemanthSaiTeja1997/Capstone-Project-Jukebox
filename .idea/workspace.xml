@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a playlist table in jukebox">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="write the query for inserting a new song in the playlist">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jukebox.database/playlist.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jukebox.database/playlist.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,13 +81,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00036" summary="create a file object that contains songpath">
-      <created>1663696985780</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1663696985780</updated>
     </task>
     <task id="LOCAL-00037" summary="create a object of AudioInputStream class that songFile">
       <created>1663697282174</created>
@@ -426,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663795098180</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="write the query for inserting a new song in the playlist">
+      <created>1663795668643</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1663795668643</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,7 +440,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set the values for the query parameter" />
     <MESSAGE value="fetch all the values of the current row from result set" />
     <MESSAGE value="created a parameterized constructor" />
     <MESSAGE value="created a getter and setter method" />
@@ -466,7 +464,8 @@
     <MESSAGE value="added add song method in the song method" />
     <MESSAGE value="created a interface Repository in the Repository package" />
     <MESSAGE value="created a playlist table in jukebox" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a playlist table in jukebox" />
+    <MESSAGE value="write the query for inserting a new song in the playlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="write the query for inserting a new song in the playlist" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
