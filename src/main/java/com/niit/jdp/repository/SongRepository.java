@@ -7,6 +7,7 @@
 package com.niit.jdp.repository;
 
 import com.niit.jdp.model.Song;
+import com.niit.jdp.service.DatabaseService;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -18,10 +19,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SongRepository {
-
-
-    List<Song> sortedsong = new ArrayList<>();
-
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
         // 1. write the query for inserting a new Song object into the `song` table
         String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `genre`, `duration`,"
@@ -61,7 +58,6 @@ public class SongRepository {
             Song newSong = new Song(songId, songName, album, artistName, gener, duration, uRL);
             songList.add(newSong);
         }
-
         return songList;
     }
 
@@ -156,7 +152,7 @@ public class SongRepository {
     public void songs(Connection connection) throws SQLException {
         Scanner scanner = new Scanner(System.in);
         SongRepository songRepository = new SongRepository();
-        List<Song> songList = songRepository.getAllSongs(connection);
+        DatabaseService databaseService = new DatabaseService();
         int choice = -1;
         do {
             System.out.println("Welcome to the Jukebox System");
@@ -167,7 +163,42 @@ public class SongRepository {
             System.out.println("4. Search By Album");
             System.out.println("5. Exit");
             System.out.println("============================================");
+            System.out.print("Enter your choice: ");
+            choice = scanner.nextInt();
 
+            try {
+                databaseService.connect();
+                switch (choice) {
+                    case 1:
+                        System.out.println("To Display All the Songs");
+                        songRepository.getAllSongs(connection).forEach(System.out::println);
+                        break;
+                    case 2:
+                        System.out.println("To Search By Artist Name");
+                        String artistName = scanner.next();
+                        songRepository.searchByArtistAndSortByName(connection, artistName).forEach(System.out::println);
+                        break;
+                    case 3:
+                        System.out.println("To Search By Genre");
+                        String genreName = scanner.next();
+                        songRepository.searchByArtistAndSortByName(connection, genreName).forEach(System.out::println);
+                        break;
+                    case 4:
+                        System.out.println("To Search By Album");
+                        String albumName = scanner.next();
+                        songRepository.searchByArtistAndSortByName(connection, albumName).forEach(System.out::println);
+                        break;
+                    case 5:
+                        System.out.println("Exit");
+                        break;
+                    default:
+                        System.err.println("Invalid choice");
+                }
+
+            } catch (ClassNotFoundException exception) {
+                exception.printStackTrace();
+                System.out.println(exception);
+            }
         } while (choice != 5);
     }
 }
