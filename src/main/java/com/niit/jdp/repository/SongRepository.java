@@ -15,6 +15,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Scanner;
 
 public class SongRepository {
 
@@ -147,9 +148,27 @@ public class SongRepository {
                 Song song = new Song(songId, songName, albums, artistName, gener, duration, uRL);
                 songList.add(song);
                 songList.sort(Comparator.comparing(Song::getName));
-
             }
             return songList;
         }
     }
+
+    public void songs(Connection connection) throws SQLException {
+        Scanner scanner = new Scanner(System.in);
+        SongRepository songRepository = new SongRepository();
+        List<Song> songList = songRepository.getAllSongs(connection);
+        int choice = -1;
+        do {
+            System.out.println("Welcome to the Jukebox System");
+            System.out.println("============================================");
+            System.out.println("1. To Display All the Songs");
+            System.out.println("2. Search By Artist Name");
+            System.out.println("3. Search By Genre");
+            System.out.println("4. Search By Album");
+            System.out.println("5. Exit");
+            System.out.println("============================================");
+
+        } while (choice != 5);
+    }
 }
+
