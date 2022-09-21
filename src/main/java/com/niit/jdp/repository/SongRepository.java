@@ -95,4 +95,9 @@ public class SongRepository {
         }
     }
 
+    public List<Song> searchByGenreAndSortByName() {
+
+        return null;
+    }
+
 }
