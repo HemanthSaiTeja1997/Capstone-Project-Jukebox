@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a method to search By Album and Sort By Name">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="create a statement object">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,27 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00024" summary="created equals and hashcode for PlayList.java class">
-      <created>1663688727132</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1663688727132</updated>
-    </task>
-    <task id="LOCAL-00025" summary="created tostring method for PlayList.java">
-      <created>1663688859334</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1663688859334</updated>
-    </task>
-    <task id="LOCAL-00026" summary="created a database jukebox">
-      <created>1663689769307</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1663689769307</updated>
     </task>
     <task id="LOCAL-00027" summary="used the jukebox database">
       <created>1663689872137</created>
@@ -423,7 +402,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663775400596</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="select song list from song table by genre name in song.sql">
+      <created>1663776231531</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1663776231531</updated>
+    </task>
+    <task id="LOCAL-00074" summary=" write the query for selecting a song object from the `song` table">
+      <created>1663776298375</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1663776298375</updated>
+    </task>
+    <task id="LOCAL-00075" summary="create a statement object">
+      <created>1663776421046</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1663776421046</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,8 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="use the connection object to execute query for selecting all songs" />
-    <MESSAGE value="iterate over result set and create a song object for each row and create a song object using values fetehed from result set" />
     <MESSAGE value="created addSongDetails method" />
     <MESSAGE value="write the query for inserting the new song objects into song table" />
     <MESSAGE value=" inserting the new song objects into song table in resource" />
@@ -458,12 +456,14 @@
     <MESSAGE value="create a method to search by genre and sort by name" />
     <MESSAGE value="select song list from song table by genre name" />
     <MESSAGE value="write the query for selecting a song object from the `song` table" />
-    <MESSAGE value="create a statement object" />
     <MESSAGE value="set the values of the query parameter" />
     <MESSAGE value="execute the query" />
     <MESSAGE value="check if resultset is empty and fetch the values in the resultset and retrun songlist" />
     <MESSAGE value="created a method to search By Album and Sort By Name" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a method to search By Album and Sort By Name" />
+    <MESSAGE value="select song list from song table by genre name in song.sql" />
+    <MESSAGE value=" write the query for selecting a song object from the `song` table" />
+    <MESSAGE value="create a statement object" />
+    <option name="LAST_COMMIT_MESSAGE" value="create a statement object" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
