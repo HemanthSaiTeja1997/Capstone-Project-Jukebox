@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a getAllSongs method in the SongRepository class">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="use the connection object to execute query for selecting all songs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -388,7 +389,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663738295829</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="created a sql query to retrieve all the rows from the song table">
+      <created>1663738508151</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1663738508151</updated>
+    </task>
+    <task id="LOCAL-00046" summary="use the connection object to execute query for selecting all songs">
+      <created>1663738685529</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1663738685529</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,8 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created the fields in the PlayList.java" />
-    <MESSAGE value="generate a no argument constructor in the playlist class" />
     <MESSAGE value="generate a parameterized  constructor in the playlist class" />
     <MESSAGE value="create a getter and setter method" />
     <MESSAGE value="created equals and hashcode for PlayList.java class" />
@@ -428,7 +441,9 @@
     <MESSAGE value="pause the current thread for the time the song is being played" />
     <MESSAGE value="added the songs in the resources" />
     <MESSAGE value="created a getAllSongs method in the SongRepository class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a getAllSongs method in the SongRepository class" />
+    <MESSAGE value="created a sql query to retrieve all the rows from the song table" />
+    <MESSAGE value="use the connection object to execute query for selecting all songs" />
+    <option name="LAST_COMMIT_MESSAGE" value="use the connection object to execute query for selecting all songs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
