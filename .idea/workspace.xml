@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added all the methodology in SearchByArtistSortByName">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/JukeboxImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/JukeboxImplementation.java" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="select song list from song table by genre name">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,20 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00016" summary="created a equals and hashcode in the Song.java">
-      <created>1663676822055</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1663676822055</updated>
-    </task>
-    <task id="LOCAL-00017" summary="created toString methods">
-      <created>1663676962014</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1663676962014</updated>
     </task>
     <task id="LOCAL-00018" summary="created a song directory and added the song">
       <created>1663677172486</created>
@@ -426,7 +409,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663763944620</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="create a method to search by genre and sort by name">
+      <created>1663774218554</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1663774218555</updated>
+    </task>
+    <task id="LOCAL-00066" summary="select song list from song table by genre name">
+      <created>1663774418987</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1663774418987</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,8 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="set a loop for the sound file" />
-    <MESSAGE value="start the sound file" />
     <MESSAGE value="pause the current thread for the time the song is being played" />
     <MESSAGE value="added the songs in the resources" />
     <MESSAGE value="created a getAllSongs method in the SongRepository class" />
@@ -466,7 +461,9 @@
     <MESSAGE value="created a equals and hashcode" />
     <MESSAGE value="created toString" />
     <MESSAGE value="added all the methodology in SearchByArtistSortByName" />
-    <option name="LAST_COMMIT_MESSAGE" value="added all the methodology in SearchByArtistSortByName" />
+    <MESSAGE value="create a method to search by genre and sort by name" />
+    <MESSAGE value="select song list from song table by genre name" />
+    <option name="LAST_COMMIT_MESSAGE" value="select song list from song table by genre name" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

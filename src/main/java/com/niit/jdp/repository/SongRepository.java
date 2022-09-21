@@ -96,6 +96,9 @@ public class SongRepository {
 
     public List<Song> searchByGenreAndSortByName() {
         // 1. write the query for selecting a song object from the `song` table
+        String searchQuery = "SELECT*From `jukebox`.`song` where (`genre`=?);";
+        List<Song> songList = new ArrayList<>();
+
         return null;
     }
 
