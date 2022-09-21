@@ -6,5 +6,23 @@
 
 package com.niit.jdp.repository;
 
-public class PlayListRepository {
+import com.niit.jdp.model.PlayList;
+import com.niit.jdp.model.Song;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.List;
+
+public abstract class PlayListRepository implements Repository<PlayList> {
+
+    @Override
+    public boolean addSongDetails(Connection connection, PlayList object) throws SQLException {
+
+        return false;
+    }
+
+    @Override
+    public List<Song> getAllSongs(Connection connection) throws SQLException {
+        return null;
+    }
 }
