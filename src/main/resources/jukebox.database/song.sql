@@ -52,6 +52,8 @@ insert into `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `genre`, `du
 insert into `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `genre`, `url`)
  VALUES ('14', 'Unravel', 'Tokyo_Ghoul', 'Yutaka Yamada', 'Punk_Rock',
  'src/main/resources/songs/Tokyo Ghoul.wav');
+ --select song list from song table by artist name
+ select*from `jukebox`.`song` where (`artist`='Weeknd');
 
 
 

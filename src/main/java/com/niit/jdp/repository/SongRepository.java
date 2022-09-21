@@ -13,7 +13,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 
 public class SongRepository {
@@ -62,18 +61,10 @@ public class SongRepository {
         return numberOfRowsAffected > 0;
     }
 
-    public void searchByArtist(List<Song> songList, String artist) {
-        try {
-            List<Song> list = new ArrayList<>();
-            for (Song p : songList) {
-                if (p.getArtist().startsWith(artist)) {
-                    list.add(p);
-                }
-            }
-            list.sort(Comparator.comparing(Song::getArtist));
-            sortedSongs = list;
-        } catch (Exception exception) {
-            exception.getMessage();
-        }
+    public Song searchAndSortByArtist(Connection connection, String artist) {
+        // 1. write the query for selecting a song object from the `song` table
+        String query = "SELECT*From `jukebox`.`song` where (`artist`=?);";
+
+        return null;
     }
 }

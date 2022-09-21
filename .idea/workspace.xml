@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="create a method ti search and sort by artist">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="inserted songs in the song table">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/jukebox.database/song.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jukebox.database/song.sql" afterDir="false" />
     </list>
@@ -81,13 +80,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00005" summary="created a song class in the model package">
-      <created>1663675330334</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675330334</updated>
     </task>
     <task id="LOCAL-00006" summary="created a PlayList.java class in the model package">
       <created>1663675418344</created>
@@ -425,7 +417,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663743964803</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="inserted songs in the song table">
+      <created>1663752020952</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1663752020953</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -440,7 +439,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created a table playlist.sql in the jukebox database" />
     <MESSAGE value="created fields in the DatabaseService.java class" />
     <MESSAGE value="created a parameterized constructors in DatabaseService class" />
     <MESSAGE value="created a getConnection method that returns connection in the DatabaseService class" />
@@ -465,7 +463,8 @@
     <MESSAGE value="create a statement object" />
     <MESSAGE value="set the values of the query parameters" />
     <MESSAGE value="create a method ti search and sort by artist" />
-    <option name="LAST_COMMIT_MESSAGE" value="create a method ti search and sort by artist" />
+    <MESSAGE value="inserted songs in the song table" />
+    <option name="LAST_COMMIT_MESSAGE" value="inserted songs in the song table" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
