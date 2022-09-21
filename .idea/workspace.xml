@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="fetch all the values of the current row from result set">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a parameterized constructor">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,13 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00011" summary="created a PlayListRepository.java class in the repository package">
-      <created>1663675860727</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675860727</updated>
     </task>
     <task id="LOCAL-00012" summary="added the fields in the Song.java class">
       <created>1663676542860</created>
@@ -425,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663753306832</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="created a parameterized constructor">
+      <created>1663755389223</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1663755389223</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -440,7 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created a play method in the MusicPlayerService class" />
     <MESSAGE value="create a file object that contains songpath" />
     <MESSAGE value="create a object of AudioInputStream class that songFile" />
     <MESSAGE value="create a object of clip class  from audioSystem" />
@@ -465,7 +462,8 @@
     <MESSAGE value="set the values for the query parameter" />
     <MESSAGE value="execute the query" />
     <MESSAGE value="fetch all the values of the current row from result set" />
-    <option name="LAST_COMMIT_MESSAGE" value="fetch all the values of the current row from result set" />
+    <MESSAGE value="created a parameterized constructor" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a parameterized constructor" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
