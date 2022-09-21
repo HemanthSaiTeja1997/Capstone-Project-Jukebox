@@ -37,4 +37,9 @@ public class SongRepository {
 
         return songList;
     }
+
+    public boolean addSongDetails(Connection connection, Song song) throws SQLException {
+
+        return false;
+    }
 }
