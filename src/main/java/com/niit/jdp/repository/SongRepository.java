@@ -94,10 +94,14 @@ public class SongRepository {
         }
     }
 
-    public List<Song> searchByGenreAndSortByName() {
+    public List<Song> searchByGenreAndSortByName(Connection connection, String genre) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String searchQuery = "SELECT*From `jukebox`.`song` where (`genre`=?);";
         List<Song> songList = new ArrayList<>();
+        // 2. create a statement object
+        try (PreparedStatement preparedStatement = connection.prepareStatement(searchQuery)) {
+
+        }
 
         return null;
     }
