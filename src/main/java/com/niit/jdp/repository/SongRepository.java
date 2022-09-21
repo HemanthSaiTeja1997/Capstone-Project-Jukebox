@@ -9,6 +9,7 @@ package com.niit.jdp.repository;
 import com.niit.jdp.model.Song;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -42,6 +43,11 @@ public class SongRepository {
         // 1. write the query for inserting a new Song object into the `song` table
         String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `gener`, `duration`," +
                 " `url`) VALUES (?,?,?,?,?,?,?);";
+        // 2. create a statement object
+        int numberOfRowsAffected;
+        try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
+
+        }
 
 
         return false;
