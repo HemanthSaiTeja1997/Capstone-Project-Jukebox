@@ -11,6 +11,7 @@ import com.niit.jdp.model.Song;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +42,9 @@ public abstract class PlayListRepository implements Repository<PlayList> {
         List<PlayList> list = new ArrayList<>();
         //create SQL query to retrieve all the rows from the Song table
         String selectAllSongs = "SELECT * FROM `jukebox`.`playlist`;";
+        //use the connection object to execute the query for selecting all songs
+        ResultSet resultSet = connection.createStatement().executeQuery(selectAllSongs);
+
 
         return null;
     }
