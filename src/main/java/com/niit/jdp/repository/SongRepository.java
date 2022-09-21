@@ -13,6 +13,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class SongRepository {
@@ -82,14 +83,17 @@ public class SongRepository {
                 String gener = resultSet.getString("genre");
                 String duration = resultSet.getString("duration");
                 String uRL = resultSet.getString("url");
-
+                // 7. create a song object using the values fetched from the result set
+                song = new Song(songId, songName, album, artistName, gener, duration, uRL);
+                sortedSongs.add(song);
             }
+            sortedSongs.sort(Comparator.comparing(Song::getArtist));
 
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
 
-        return null;
+        return song;
     }
 }
