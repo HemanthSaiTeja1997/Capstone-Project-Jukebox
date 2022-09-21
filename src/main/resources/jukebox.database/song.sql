@@ -12,3 +12,7 @@ create TABLE `jukebox`.`song`(
   `duration` VARCHAR(45) NOT NULL,
   `url` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`songId`));
+  --insert values into song table
+  insert into `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `gener`, `duration`, `url`)
+  VALUES ('1', 'Shippuuden', 'Naruto', 'Yasuharu Takanashi', 'Industrial Metal', '2:06',
+   'src/main/resources/songs/01-Shippuuden.wav');
