@@ -62,4 +62,13 @@ public class PlayList {
     public int hashCode() {
         return Objects.hash(playListId, playListName, song);
     }
+
+    @Override
+    public String toString() {
+        return "PlayList{" +
+                "playListId=" + playListId +
+                ", playListName='" + playListName + '\'' +
+                ", song=" + song +
+                '}';
+    }
 }
