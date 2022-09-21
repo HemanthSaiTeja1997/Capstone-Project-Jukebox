@@ -21,7 +21,8 @@ public abstract class PlayListRepository implements Repository<PlayList> {
     @Override
     public boolean addSongDetails(Connection connection, PlayList playList) throws SQLException {
         // 1. write the query for inserting a new Song object into the `playlist` table
-        String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlistId`, `playlistName`, `song_Id`) VALUES (?,?,?);";
+        String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlistId`, `playlistName`," +
+                " `song_Id`) VALUES (?,?,?);";
         // 2. create a statement object
         int numberOfRowsAffected;
         String songID = song.toString().trim().replace("\\[\\]", "");
@@ -36,7 +37,7 @@ public abstract class PlayListRepository implements Repository<PlayList> {
     }
 
     @Override
-    public List<Song> getAllSongs(Connection connection) throws SQLException {
+    public List<PlayList> getAllSongs(Connection connection) throws SQLException {
         return null;
     }
 }
