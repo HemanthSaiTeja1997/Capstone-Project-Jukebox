@@ -8,6 +8,7 @@ package com.niit.jdp.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class PlayList {
     private int playListId;
@@ -46,5 +47,19 @@ public class PlayList {
 
     public void setSong(List<Song> song) {
         this.song = song;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        PlayList playList = (PlayList) o;
+        return playListId == playList.playListId && Objects.equals(playListName, playList.playListName) && Objects.equals(song, playList.song);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(playListId, playListName, song);
     }
 }
