@@ -100,6 +100,8 @@ public class SongRepository {
         List<Song> songList = new ArrayList<>();
         // 2. create a statement object
         try (PreparedStatement preparedStatement = connection.prepareStatement(searchQuery)) {
+            // 3. set the values of the query parameters
+            preparedStatement.setString(1, genre);
 
         }
 
