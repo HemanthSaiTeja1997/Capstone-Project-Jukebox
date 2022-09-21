@@ -66,7 +66,6 @@ public class SongRepository {
 
     public List<Song> searchByArtistAndSortByName(Connection connection, String artist) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
-
         String searchQuery = "SELECT*From `jukebox`.`song` where (`artist`=?);";
         List<Song> songList = new ArrayList<>();
         // 2. create a statement object
@@ -96,7 +95,7 @@ public class SongRepository {
     }
 
     public List<Song> searchByGenreAndSortByName() {
-
+        // 1. write the query for selecting a song object from the `song` table
         return null;
     }
 
