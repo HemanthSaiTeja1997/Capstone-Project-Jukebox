@@ -181,12 +181,12 @@ public class SongRepository {
                     case 3:
                         System.out.println("To Search By Genre");
                         String genreName = scanner.next();
-                        songRepository.searchByArtistAndSortByName(connection, genreName).forEach(System.out::println);
+                        songRepository.searchByGenreAndSortByName(connection, genreName).forEach(System.out::println);
                         break;
                     case 4:
                         System.out.println("To Search By Album");
                         String albumName = scanner.next();
-                        songRepository.searchByArtistAndSortByName(connection, albumName).forEach(System.out::println);
+                        songRepository.searchByAlbumAndSortByName(connection, albumName).forEach(System.out::println);
                         break;
                     case 5:
                         System.out.println("Exit");

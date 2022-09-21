@@ -20,7 +20,7 @@ public class JukeboxImplementation {
         Connection connection = databaseService.getConnection();
         SongRepository songRepository = new SongRepository();
         MusicPlayerService musicPlayerService = new MusicPlayerService();
-         songRepository.getAllSongs(connection).forEach(System.out::println);
+        songRepository.songs(connection);
         // songRepository.searchByArtistAndSortByName(connection, "Yasuharu Takanashi").forEach(System.out::println);
         // songRepository.searchByGenreAndSortByName(connection, "Industrial Metal").forEach(System.out::println);
 
