@@ -13,9 +13,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class SongRepository {
+    List<Song> sortedSongs = new ArrayList<>();
+
     public List<Song> getAllSongs(Connection connection) throws SQLException {
         List<Song> songList = new ArrayList<>();
         //create SQL query to retrieve all the rows from the Song table
@@ -28,7 +31,7 @@ public class SongRepository {
             String songName = resultSet.getString("name");
             String album = resultSet.getString("album");
             String artistName = resultSet.getString("artist_name");
-            String gener = resultSet.getString("gener");
+            String gener = resultSet.getString("genre");
             String duration = resultSet.getString("duration");
             String uRL = resultSet.getString("url");
             //create a Song object using the values fetched from the result set
@@ -41,7 +44,7 @@ public class SongRepository {
 
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
         // 1. write the query for inserting a new Song object into the `song` table
-        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `gener`, `duration`,"
+        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `genre`, `duration`,"
                 + " `url`) VALUES (?,?,?,?,?,?,?);";
         // 2. create a statement object
         int numberOfRowsAffected;
@@ -59,8 +62,18 @@ public class SongRepository {
         return numberOfRowsAffected > 0;
     }
 
-    public void searchbyartist(List<Song> songList, String artist) {
-
-
+    public void searchByArtist(List<Song> songList, String artist) {
+        try {
+            List<Song> list = new ArrayList<>();
+            for (Song p : songList) {
+                if (p.getArtist().startsWith(artist)) {
+                    list.add(p);
+                }
+            }
+            list.sort(Comparator.comparing(Song::getArtist));
+            sortedSongs = list;
+        } catch (Exception exception) {
+            exception.getMessage();
+        }
     }
 }
