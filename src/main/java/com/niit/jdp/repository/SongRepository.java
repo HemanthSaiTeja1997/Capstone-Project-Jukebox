@@ -174,21 +174,42 @@ public class SongRepository {
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         break;
                     case 2:
+                        System.out.println("Add a new songList to the database");
+                        System.out.println("Enter the songId: ");
+                        int songId = scanner.nextInt();
+                        System.out.println("Enter the song name: ");
+                        String songName = scanner.next();
+                        System.out.println("Enter the albumName: ");
+                        String album = scanner.next();
+                        System.out.println("Enter the artistName: ");
+                        String artistName1 = scanner.next();
+                        System.out.println("Enter the song Genre: ");
+                        String genre = scanner.next();
+                        System.out.println("Enter the song duration: ");
+                        String duration = scanner.next();
+                        System.out.println("Enter the song URL: ");
+                        String uRL = scanner.next();
+                        Song song = new Song(songId, songName, album, artistName1, genre, duration, uRL);
+                        songRepository.addSongDetails(connection, song);
+                        System.out.println("\u001B[32mA New Song List Entered successfully.\u001B[0m");
+                        break;
+
+                    case 3:
                         System.out.println("To Search By Artist Name");
                         String artistName = scanner.next();
                         songRepository.searchByArtistAndSortByName(connection, artistName).forEach(System.out::println);
                         break;
-                    case 3:
+                    case 4:
                         System.out.println("To Search By Genre");
                         String genreName = scanner.next();
                         songRepository.searchByGenreAndSortByName(connection, genreName).forEach(System.out::println);
                         break;
-                    case 4:
+                    case 5:
                         System.out.println("To Search By Album");
                         String albumName = scanner.next();
                         songRepository.searchByAlbumAndSortByName(connection, albumName).forEach(System.out::println);
                         break;
-                    case 5:
+                    case 6:
                         System.out.println("Exit");
                         break;
                     default:
@@ -199,7 +220,7 @@ public class SongRepository {
                 exception.printStackTrace();
                 System.out.println(exception);
             }
-        } while (choice != 5);
+        } while (choice != 6);
     }
 }
 
