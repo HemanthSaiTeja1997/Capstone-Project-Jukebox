@@ -10,4 +10,6 @@
     REFERENCES `jukebox`.`song` (`song_Id`)
     ON delete NO ACTION
     ON update NO ACTION);
+    --insert values into playlist table
+    insert into `jukebox`.`playlist` (`playlistId`, `playlistName`, `song_Id`) VALUES ('2', 'list', '2');
 

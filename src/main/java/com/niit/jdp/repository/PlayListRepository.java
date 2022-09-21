@@ -17,6 +17,10 @@ public abstract class PlayListRepository implements Repository<PlayList> {
 
     @Override
     public boolean addSongDetails(Connection connection, PlayList object) throws SQLException {
+        // 1. write the query for inserting a new Song object into the `playlist` table
+        String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlistId`, `playlistName`, `song_Id`) VALUES (?,?,?);";
+        // 2. create a statement object
+
 
         return false;
     }

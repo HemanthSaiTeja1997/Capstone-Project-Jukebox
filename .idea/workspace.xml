@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a interface Repository in the Repository package">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a playlist table in jukebox">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jukebox.database/playlist.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jukebox.database/playlist.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,13 +82,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00035" summary="created a play method in the MusicPlayerService class">
-      <created>1663696859610</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1663696859610</updated>
     </task>
     <task id="LOCAL-00036" summary="create a file object that contains songpath">
       <created>1663696985780</created>
@@ -426,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663790755242</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="created a playlist table in jukebox">
+      <created>1663795098180</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1663795098180</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,7 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create a statement object for searcgQuery" />
     <MESSAGE value="set the values for the query parameter" />
     <MESSAGE value="fetch all the values of the current row from result set" />
     <MESSAGE value="created a parameterized constructor" />
@@ -466,7 +465,8 @@
     <MESSAGE value="changed the syntax" />
     <MESSAGE value="added add song method in the song method" />
     <MESSAGE value="created a interface Repository in the Repository package" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a interface Repository in the Repository package" />
+    <MESSAGE value="created a playlist table in jukebox" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a playlist table in jukebox" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
