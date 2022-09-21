@@ -63,7 +63,15 @@ public class SongRepository {
 
     public Song searchAndSortByArtist(Connection connection, String artist) {
         // 1. write the query for selecting a song object from the `song` table
-        String query = "SELECT*From `jukebox`.`song` where (`artist`=?);";
+        String searchQuery = "SELECT*From `jukebox`.`song` where (`artist`=?);";
+        Song song = new Song();
+        // 2. create a statement object
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(searchQuery);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
 
         return null;
     }
