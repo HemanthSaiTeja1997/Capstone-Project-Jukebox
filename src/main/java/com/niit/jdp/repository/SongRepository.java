@@ -39,6 +39,10 @@ public class SongRepository {
     }
 
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
+        // 1. write the query for inserting a new Song object into the `song` table
+        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `gener`, `duration`," +
+                " `url`) VALUES (?,?,?,?,?,?,?);";
+
 
         return false;
     }
