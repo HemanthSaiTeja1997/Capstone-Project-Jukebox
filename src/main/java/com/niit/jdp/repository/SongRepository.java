@@ -122,4 +122,9 @@ public class SongRepository {
             return songList;
         }
     }
+
+    public List<Song> searchByAlbumAndSortByName(Connection connections, String url) {
+
+        return null;
+    }
 }

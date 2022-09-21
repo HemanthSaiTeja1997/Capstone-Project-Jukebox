@@ -22,7 +22,8 @@ public class JukeboxImplementation {
         MusicPlayerService musicPlayerService = new MusicPlayerService();
         // musicPlayerService.play("src/main/resources/songs/akatsuki-theme.wav");
         // songRepository.getAllSongs(connection).forEach(System.out::println);
-        songRepository.searchByArtistAndSortByName(connection, "Yasuharu Takanashi").forEach(System.out::println);
+        // songRepository.searchByArtistAndSortByName(connection, "Yasuharu Takanashi").forEach(System.out::println);
+        // songRepository.searchByGenreAndSortByName(connection, "Industrial Metal").forEach(System.out::println);
 
     }
 }
