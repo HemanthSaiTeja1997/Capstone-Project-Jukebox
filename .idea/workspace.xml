@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created addSongDetails method">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="create a statement object">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
@@ -80,20 +81,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1663674755843</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674755843</updated>
-    </task>
-    <task id="LOCAL-00002" summary="changed the source and target from 18 to 11">
-      <created>1663674814856</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1663674814856</updated>
     </task>
     <task id="LOCAL-00003" summary="add the dependencies of mysql-connector-java">
       <created>1663674903641</created>
@@ -417,7 +404,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663741264997</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="write the query for inserting the new song objects into song table">
+      <created>1663742145224</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1663742145224</updated>
+    </task>
+    <task id="LOCAL-00050" summary=" inserting the new song objects into song table in resource">
+      <created>1663742281672</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1663742281672</updated>
+    </task>
+    <task id="LOCAL-00051" summary="create a statement object">
+      <created>1663742382782</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1663742382782</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,9 +440,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created equals and hashcode for PlayList.java class" />
-    <MESSAGE value="created tostring method for PlayList.java" />
-    <MESSAGE value="created a database jukebox" />
     <MESSAGE value="used the jukebox database" />
     <MESSAGE value="created a table song in the jukebox database" />
     <MESSAGE value="created a table playlist.sql in the jukebox database" />
@@ -457,7 +462,10 @@
     <MESSAGE value="use the connection object to execute query for selecting all songs" />
     <MESSAGE value="iterate over result set and create a song object for each row and create a song object using values fetehed from result set" />
     <MESSAGE value="created addSongDetails method" />
-    <option name="LAST_COMMIT_MESSAGE" value="created addSongDetails method" />
+    <MESSAGE value="write the query for inserting the new song objects into song table" />
+    <MESSAGE value=" inserting the new song objects into song table in resource" />
+    <MESSAGE value="create a statement object" />
+    <option name="LAST_COMMIT_MESSAGE" value="create a statement object" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

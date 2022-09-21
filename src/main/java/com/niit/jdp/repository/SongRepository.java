@@ -41,15 +41,21 @@ public class SongRepository {
 
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
         // 1. write the query for inserting a new Song object into the `song` table
-        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `gener`, `duration`," +
-                " `url`) VALUES (?,?,?,?,?,?,?);";
+        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `gener`, `duration`,"
+                + " `url`) VALUES (?,?,?,?,?,?,?);";
         // 2. create a statement object
         int numberOfRowsAffected;
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
-
+            // 3. set the values of the query parameters
+            preparedStatement.setInt(1, song.getSongId());
+            preparedStatement.setString(2, song.getName());
+            preparedStatement.setString(3, song.getAlbum());
+            preparedStatement.setString(4, song.getArtist());
+            preparedStatement.setString(5, song.getGenre());
+            preparedStatement.setString(6, song.getDuration());
+            preparedStatement.setString(7, song.getUrl());
+            numberOfRowsAffected = preparedStatement.executeUpdate();
         }
-
-
-        return false;
+        return numberOfRowsAffected > 0;
     }
 }
