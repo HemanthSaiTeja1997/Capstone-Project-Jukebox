@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="create a statement object for searcgQuery">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="execute the query">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,20 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00008" summary="created a MusicPlayerService.java class in the service package">
-      <created>1663675558853</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675558853</updated>
-    </task>
-    <task id="LOCAL-00009" summary="created a JukeboxImpl.java class in the com.niit.jdp package with main method">
-      <created>1663675715104</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675715104</updated>
     </task>
     <task id="LOCAL-00010" summary="created a SongRepository.java class in the repository package">
       <created>1663675806572</created>
@@ -423,7 +409,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663752715655</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="set the values for the query parameter">
+      <created>1663752897268</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1663752897268</updated>
+    </task>
+    <task id="LOCAL-00058" summary="execute the query">
+      <created>1663753129684</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1663753129684</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -438,8 +438,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created a getConnection method that returns connection in the DatabaseService class" />
-    <MESSAGE value="created a connect method that returns connection in the DatabaseService class" />
     <MESSAGE value="created a printConnectionstatus in DatabaseService class" />
     <MESSAGE value="created a play method in the MusicPlayerService class" />
     <MESSAGE value="create a file object that contains songpath" />
@@ -463,7 +461,9 @@
     <MESSAGE value="inserted songs in the song table" />
     <MESSAGE value="created a method to select song list based on artist name" />
     <MESSAGE value="create a statement object for searcgQuery" />
-    <option name="LAST_COMMIT_MESSAGE" value="create a statement object for searcgQuery" />
+    <MESSAGE value="set the values for the query parameter" />
+    <MESSAGE value="execute the query" />
+    <option name="LAST_COMMIT_MESSAGE" value="execute the query" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

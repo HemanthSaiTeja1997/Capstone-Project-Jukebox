@@ -75,6 +75,13 @@ public class SongRepository {
             // 5. check if the result set is empty
             while (resultSet.next()) {
                 // 6. fetch the values of the current row from the result set
+                int songId = resultSet.getInt("song_Id");
+                String songName = resultSet.getString("name");
+                String album = resultSet.getString("album");
+                String artistName = resultSet.getString("artist_name");
+                String gener = resultSet.getString("genre");
+                String duration = resultSet.getString("duration");
+                String uRL = resultSet.getString("url");
 
             }
 
