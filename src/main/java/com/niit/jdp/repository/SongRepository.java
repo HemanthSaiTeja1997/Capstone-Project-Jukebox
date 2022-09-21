@@ -123,9 +123,13 @@ public class SongRepository {
         }
     }
 
-    public List<Song> searchByAlbumAndSortByName(Connection connections, String url) {
+    public List<Song> searchByAlbumAndSortByName(Connection connection, String url) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String searchQuery = "SELECT*From `jukebox`.`song` where (`album`=?);";
+        List<Song> songList = new ArrayList<>();
+        // 2. create a statement object
+        try (PreparedStatement preparedStatement = connection.prepareStatement(searchQuery)) {
+        }
 
         return null;
     }
