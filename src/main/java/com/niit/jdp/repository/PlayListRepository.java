@@ -38,6 +38,10 @@ public abstract class PlayListRepository implements Repository<PlayList> {
 
     @Override
     public List<PlayList> getAllSongs(Connection connection) throws SQLException {
+        List<PlayList> list = new ArrayList<>();
+        //create SQL query to retrieve all the rows from the Song table
+        String selectAllSongs = "SELECT * FROM `jukebox`.`playlist`;";
+
         return null;
     }
 }
