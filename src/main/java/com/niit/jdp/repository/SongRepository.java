@@ -131,6 +131,8 @@ public class SongRepository {
         try (PreparedStatement preparedStatement = connection.prepareStatement(searchQuery)) {
             // 3. set the values of the query parameters
             preparedStatement.setString(1, album);
+            //4. execute the query
+            ResultSet resultSet = preparedStatement.executeQuery();
 
         }
 
