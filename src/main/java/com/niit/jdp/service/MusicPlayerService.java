@@ -9,8 +9,10 @@ package com.niit.jdp.service;
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class MusicPlayerService {
+    Scanner scanner = new Scanner(System.in);
     public void play(String songPath) {
         // 2. a file object that contains our song
         File songFile = new File(songPath);
@@ -25,6 +27,9 @@ public class MusicPlayerService {
             clip.loop(Clip.LOOP_CONTINUOUSLY);
             // 7. start the sound file
             clip.start();
+            System.out.println("Press spacebar to stop the song");
+            String next = scanner.next();
+            clip.stop();
             // 8. pause the current thread for the time the song is being played
             long songDurationInMilliseconds = clip.getMicrosecondLength() / 1000L;
             Thread.sleep(songDurationInMilliseconds);

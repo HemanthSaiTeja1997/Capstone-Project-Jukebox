@@ -6,7 +6,6 @@
 
 package com.niit.jdp;
 
-import com.niit.jdp.model.Song;
 import com.niit.jdp.repository.PlayListRepository;
 import com.niit.jdp.repository.SongRepository;
 import com.niit.jdp.service.DatabaseService;
@@ -14,7 +13,6 @@ import com.niit.jdp.service.MusicPlayerService;
 
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.List;
 import java.util.Scanner;
 
 public class JukeboxImplementation {
@@ -26,10 +24,11 @@ public class JukeboxImplementation {
         SongRepository songRepository = new SongRepository();
         PlayListRepository playListRepository = new PlayListRepository();
         MusicPlayerService musicPlayerService = new MusicPlayerService();
-//        System.out.println("select song id from song list to play song:");
-//        int songid = scanner.nextInt();
-//        String url = songRepository.getURL(connection, songid);
-//        musicPlayerService.play(
+        // playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
+        System.out.println("select song id from song list to play song:");
+        int songid = scanner.nextInt();
+        String url = songRepository.getURL(connection, songid);
+        musicPlayerService.play(url);
 
 
 //        //songRepository.getById(connection,1);
@@ -39,8 +38,8 @@ public class JukeboxImplementation {
 ////        System.out.println("Enter number");
 ////        int Id = scanner.nextInt();
 ////        songRepository.getURL(connection, Id);
-        songRepository.songs(connection);
-        List<Song> allSongs = songRepository.getAllSongs(connection);
+//       songRepository.songs(connection);
+//        List<Song> allSongs = songRepository.getAllSongs(connection);
 //PlayList play = new PlayList(1,"hemanth",allSongs);
 //playListRepository.addSongDetails(connection,play);
 //        // songRepository.searchByArtistAndSortByName(connection, "Yasuharu Takanashi").forEach(System.out::println);

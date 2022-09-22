@@ -221,7 +221,7 @@ public class SongRepository implements Repository<Song> {
                     case 6:
                         System.out.println("Please Enter playlist Name :");
                         String playlistName = scanner.next();
-                        System.out.println("Please Enter songid with spaces");
+                        System.out.println("Please Enter song id with spaces");
                         String input = scanner.next();
                         String[] numbers = input.split(" ");
                         for (String songID : numbers) {
