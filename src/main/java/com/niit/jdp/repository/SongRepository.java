@@ -234,8 +234,8 @@ public class SongRepository implements Repository<Song> {
                                 System.out.println("Song not added to playlist");
                             }
                         }
-
-                        scanner.close();
+                        System.out.println("DISPLAY PLAYLIST");
+                        playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
                         break;
                     case 7:
                         System.out.println("Exit");

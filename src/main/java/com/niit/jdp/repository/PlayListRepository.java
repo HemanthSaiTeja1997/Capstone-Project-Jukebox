@@ -57,5 +57,25 @@ public class PlayListRepository {
         return playLists;
     }
 
+    public void toDisplaySelectedSongFromPlaylist(Connection connection, String playlistsName) throws SQLException {
+        //create SQL query to retrieve all the rows from the Song table
+        String selectAllSongs = "SELECT `playlist_name`,`song_Id`,`playlist_url` FROM `jukebox`.`playlist` where (`playlist_name`=?);";
+        //use the connection object to execute the query for selecting all songs
+        try (PreparedStatement preparedStatement = connection.prepareStatement(selectAllSongs)) {
+            // 3. set the values of the query parameters
+            preparedStatement.setString(1, playlistsName);
+            //4. execute the query
+            ResultSet resultSet = preparedStatement.executeQuery();
+            // 5. check if the result set is empty
+            while (resultSet.next()) {
+                // 6. fetch the values of the current row from the result set
+                int songId = resultSet.getInt("song_Id");
+                String songName = resultSet.getString("playlist_name");
+                String playlistURl = resultSet.getString("playlist_url");
+                // 7. create a song object using the values fetched from the result set
+                System.out.println("SongId : " + songId + "," + "PlaylistName : " + playlistsName + "," + "PlaylistURL : " + playlistURl);
+            }
+        }
 
+    }
 }
