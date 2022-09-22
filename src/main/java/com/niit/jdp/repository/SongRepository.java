@@ -156,18 +156,21 @@ public class SongRepository implements Repository<Song> {
 
     @Override
     public void songs(Connection connection) throws SQLException {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in).useDelimiter("[,\\s+]");
         SongRepository songRepository = new SongRepository();
+        PlayListRepository playListRepository = new PlayListRepository();
         DatabaseService databaseService = new DatabaseService();
         int choice = -1;
         do {
             System.out.println("Welcome to the Jukebox System");
             System.out.println("============================================");
             System.out.println("1. To Display All the Songs");
-            System.out.println("2. Search By Artist Name");
-            System.out.println("3. Search By Genre");
-            System.out.println("4. Search By Album");
-            System.out.println("5. Exit");
+            System.out.println("2. Add a new songList to the database");
+            System.out.println("3. Search By Artist Name");
+            System.out.println("4. Search By Genre");
+            System.out.println("5. Search By Album");
+            System.out.println("7. Exit");
+            System.out.println("6. Select the songId to add into playlist from above song list");
             System.out.println("============================================");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
@@ -216,6 +219,25 @@ public class SongRepository implements Repository<Song> {
                         songRepository.searchByAlbumAndSortByName(connection, albumName).forEach(System.out::println);
                         break;
                     case 6:
+                        System.out.println("Please Enter playlist Name :");
+                        String playlistName = scanner.next();
+                        System.out.println("Please Enter songid with spaces");
+                        String input = scanner.next();
+                        String[] numbers = input.split(" ");
+                        for (String songID : numbers) {
+                            Song song3 = songRepository.getById(connection, Integer.parseInt(songID));
+                            boolean result = false;
+                            result = playListRepository.addSongDetails(connection, playlistName, song3);
+                            if (result) {
+                                System.out.println("Song added to playlist ");
+                            } else {
+                                System.out.println("Song not added to playlist");
+                            }
+                        }
+
+                        scanner.close();
+                        break;
+                    case 7:
                         System.out.println("Exit");
                         break;
                     default:
@@ -248,6 +270,35 @@ public class SongRepository implements Repository<Song> {
         }
         System.out.println(uRL);
         return uRL;
+    }
+
+    public Song getById(Connection connection, int id) throws SQLException {
+        // 1. write the query for selecting a song object from the `song` table
+        String searchQuery = "SELECT*From `jukebox`.`song` where (`song_Id`=?);";
+        Song song = new Song();
+        // 2. create a statement object
+        try (PreparedStatement preparedStatement = connection.prepareStatement(searchQuery)) {
+            // 3. set the values of the query parameters
+            preparedStatement.setInt(1, id);
+            //4. execute the query
+            ResultSet resultSet = preparedStatement.executeQuery();
+            // 5. check if the result set is empty
+            while (resultSet.next()) {
+                // 6. fetch the values of the current row from the result set
+                int songId = resultSet.getInt("song_Id");
+                String songName = resultSet.getString("name");
+                String album = resultSet.getString("album");
+                String artistName = resultSet.getString("artist");
+                String gener = resultSet.getString("genre");
+                String duration = resultSet.getString("duration");
+                String uRL = resultSet.getString("url");
+                // 7. create a song object using the values fetched from the result set
+                song = new Song(songId, songName, album, artistName, gener, duration, uRL);
+                // System.out.println(song.getUrl());
+            }
+            //  System.out.println(song);
+            return song;
+        }
     }
 
 }

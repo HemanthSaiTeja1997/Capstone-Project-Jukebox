@@ -6,24 +6,24 @@
 
 package com.niit.jdp.model;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 public class PlayList {
     private int playListId;
     private String playListName;
-    private List<Song> song;
+    private int songId;
+    private String playlistUrl;
 
     public PlayList() {
-        song = new ArrayList<Song>();
     }
 
-    public PlayList(int playListId, String playListName, List<Song> song) {
+    public PlayList(int playListId, String playListName, int songId, String playlistUrl) {
         this.playListId = playListId;
         this.playListName = playListName;
-        this.song = song;
+        this.songId = songId;
+        this.playlistUrl = playlistUrl;
     }
+
     public int getPlayListId() {
         return playListId;
     }
@@ -40,33 +40,42 @@ public class PlayList {
         this.playListName = playListName;
     }
 
-    public List<Song> getSong() {
-        return song;
+    public int getSongId() {
+        return songId;
     }
 
-    public void setSong(List<Song> song) {
-        this.song = song;
+    public void setSongId(int songId) {
+        this.songId = songId;
+    }
+
+    public String getPlaylistUrl() {
+        return playlistUrl;
+    }
+
+    public void setPlaylistUrl(String playlistUrl) {
+        this.playlistUrl = playlistUrl;
     }
 
     @Override
     public boolean equals(Object o) {
-
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         PlayList playList = (PlayList) o;
-        return playListId == playList.playListId && Objects.equals(playListName, playList.playListName) && Objects.equals(song, playList.song);
+        return playListId == playList.playListId && songId == playList.songId && Objects.equals(playListName, playList.playListName) && Objects.equals(playlistUrl, playList.playlistUrl);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(playListId, playListName, song);
+        return Objects.hash(playListId, playListName, songId, playlistUrl);
     }
 
     @Override
     public String toString() {
         return "PlayList{" +
                 "playListId=" + playListId +
-                ", playListName='" + playListName + "\n" + song +
+                ", playListName='" + playListName + '\'' +
+                ", songId=" + songId +
+                ", playlistUrl='" + playlistUrl + '\'' +
                 '}';
     }
 }
