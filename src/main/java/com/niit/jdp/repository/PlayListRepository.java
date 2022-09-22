@@ -11,13 +11,12 @@ import com.niit.jdp.model.Song;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class PlayListRepository implements Repository<PlayList> {
-    List<Song> song = new ArrayList<Song>();
+    List<Song> song = new ArrayList<>();
 
     @Override
     public boolean addSongDetails(Connection connection, PlayList playList) throws SQLException {
@@ -37,15 +36,22 @@ public abstract class PlayListRepository implements Repository<PlayList> {
         return numberOfRowsAffected > 0;
     }
 
-    @Override
-    public List<PlayList> getAllSongs(Connection connection) throws SQLException {
-        List<PlayList> list = new ArrayList<>();
-        //create SQL query to retrieve all the rows from the Song table
-        String selectAllSongs = "SELECT * FROM `jukebox`.`playlist`;";
-        //use the connection object to execute the query for selecting all songs
-        ResultSet resultSet = connection.createStatement().executeQuery(selectAllSongs);
-
-
-        return null;
-    }
+//    @Override
+//    public List<PlayList> getAllSongs(Connection connection) throws SQLException {
+//        List<PlayList> list = new ArrayList<>();
+//        //create SQL query to retrieve all the rows from the Song table
+//        String selectAllSongs = "SELECT * FROM `jukebox`.`playlist`;";
+//        String songID = song.toString().trim().replace("\\[\\]", "");
+//        //use the connection object to execute the query for selecting all songs
+//        ResultSet resultSet = connection.createStatement().executeQuery(selectAllSongs);
+//        //iterate over the result set and create a Song object for each row
+//        while (resultSet.next()) {
+//            int playlistID = resultSet.getInt("playlistId");
+//            String playlistsName = resultSet.getString("playlistName");
+//            String songID1 = resultSet.getString("songID");
+//            //create a Song object using the values fetched from the result set
+//            PlayList playlist = new PlayList(playlistID, playlistsName,List<songID1>);
+//        }
+//        return list;
+//    }
 }

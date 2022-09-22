@@ -24,7 +24,6 @@ public class PlayList {
         this.playListName = playListName;
         this.song = song;
     }
-
     public int getPlayListId() {
         return playListId;
     }
@@ -67,8 +66,7 @@ public class PlayList {
     public String toString() {
         return "PlayList{" +
                 "playListId=" + playListId +
-                ", playListName='" + playListName + '\'' +
-                ", song=" + song +
+                ", playListName='" + playListName + "\n" + song +
                 '}';
     }
 }
