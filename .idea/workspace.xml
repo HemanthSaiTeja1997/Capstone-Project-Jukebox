@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added the junit jupiter 5.9.0 for test cases">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created SongRepositoryTest class in test folder">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.niit.jdp.service" />
       <recent name="com.niit.jdp.repository" />
     </key>
   </component>
@@ -90,13 +90,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00043" summary="added the songs in the resources">
-      <created>1663737113534</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1663737113535</updated>
     </task>
     <task id="LOCAL-00044" summary="created a getAllSongs method in the SongRepository class">
       <created>1663738295828</created>
@@ -434,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663817654539</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="created SongRepositoryTest class in test folder">
+      <created>1663818715777</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1663818715777</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create a method to search by genre and sort by name" />
     <MESSAGE value="select song list from song table by genre name" />
     <MESSAGE value="write the query for selecting a song object from the `song` table" />
     <MESSAGE value="set the values of the query parameter" />
@@ -474,7 +473,8 @@
     <MESSAGE value="use the connection object to execute the query for selecting the songs" />
     <MESSAGE value="added the syntax changes" />
     <MESSAGE value="added the junit jupiter 5.9.0 for test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the junit jupiter 5.9.0 for test cases" />
+    <MESSAGE value="created SongRepositoryTest class in test folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="created SongRepositoryTest class in test folder" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
