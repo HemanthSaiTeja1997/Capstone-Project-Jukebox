@@ -63,4 +63,13 @@ class DatabaseServiceTest {
 
     }
 
+    @Test
+    void printConnectionStatusFailure() throws SQLException, ClassNotFoundException {
+        databaseService.connect();
+        String expectedResult = "Not connected to the database";
+        String actualResult = printConnectionStatus1();
+        Assertions.assertEquals(expectedResult, actualResult);
+
+    }
+
 }
