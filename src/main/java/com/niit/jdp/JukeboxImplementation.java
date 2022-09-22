@@ -25,9 +25,9 @@ public class JukeboxImplementation {
 //        System.out.println("Enter any song number from 1 to 14 :");
 ////        int j = scanner.nextInt();
 //        System.out.println("Enter number");
-//        int Id = scanner.nextInt();
-//        songRepository.getURL(connection, Id);
-        // songRepository.songs(connection);
+        int Id = scanner.nextInt();
+        songRepository.getURL(connection, Id);
+//        songRepository.songs(connection);
 //        List<Song> allSongs=songRepository.getAllSongs(connection);
 //        PlayList play = new PlayList(1,"hemanth",allSongs);
 //        System.out.println(play);

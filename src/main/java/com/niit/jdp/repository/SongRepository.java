@@ -229,7 +229,7 @@ public class SongRepository implements Repository<Song> {
         } while (choice != 6);
     }
 
-    public List<Song> getURL(Connection connection, int songId) throws SQLException {
+    public String getURL(Connection connection, int songId) throws SQLException {
         Scanner scanner = new Scanner(System.in);
         List<Song> songList = new ArrayList<>();
         // 1. write the query for selecting a song object from the `song` table
@@ -240,20 +240,14 @@ public class SongRepository implements Repository<Song> {
         preparedStatement.setInt(1, songId);
         //4. execute the query
         ResultSet resultSet = preparedStatement.executeQuery();
+        String uRL = "";
         while (resultSet.next()) {
             // 6. fetch the values of the current row from the result set
-            int songId5 = resultSet.getInt("song_Id");
-            String songName = resultSet.getString("name");
-            String albums = resultSet.getString("album");
-            String artistName = resultSet.getString("artist");
-            String gener = resultSet.getString("genre");
-            String duration = resultSet.getString("duration");
-            String uRL = resultSet.getString("url");
+            uRL = resultSet.getString("url");
             // 7. create a song object using the values fetched from the result set
-            Song song = new Song(songId, songName, albums, artistName, gener, duration, uRL);
-            songList.add(song);
         }
-        return songList;
+        System.out.println(uRL);
+        return uRL;
     }
 
 }
