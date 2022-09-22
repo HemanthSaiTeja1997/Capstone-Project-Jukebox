@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created SongRepositoryTest class in test folder">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created DatabaseServiceTest class in test folder in service package">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <recent name="com.niit.jdp.repository" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DatabaseServiceTest.connect">
     <configuration name="JukeboxImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.JukeboxImplementation" />
       <module name="Capstone-Project-Jukebox" />
@@ -76,8 +78,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatabaseServiceTest.connect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Capstone-Project-Jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jdp.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jdp.service" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.service.DatabaseServiceTest" />
+      <option name="METHOD_NAME" value="connect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DatabaseServiceTest.connect" />
         <item itemvalue="Application.JukeboxImplementation" />
       </list>
     </recent_temporary>
@@ -90,13 +109,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00044" summary="created a getAllSongs method in the SongRepository class">
-      <created>1663738295828</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1663738295829</updated>
     </task>
     <task id="LOCAL-00045" summary="created a sql query to retrieve all the rows from the song table">
       <created>1663738508151</created>
@@ -434,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663818715777</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="created DatabaseServiceTest class in test folder in service package">
+      <created>1663818922785</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1663818922785</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="select song list from song table by genre name" />
     <MESSAGE value="write the query for selecting a song object from the `song` table" />
     <MESSAGE value="set the values of the query parameter" />
     <MESSAGE value="check if resultset is empty and fetch the values in the resultset and retrun songlist" />
@@ -474,7 +492,8 @@
     <MESSAGE value="added the syntax changes" />
     <MESSAGE value="added the junit jupiter 5.9.0 for test cases" />
     <MESSAGE value="created SongRepositoryTest class in test folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="created SongRepositoryTest class in test folder" />
+    <MESSAGE value="created DatabaseServiceTest class in test folder in service package" />
+    <option name="LAST_COMMIT_MESSAGE" value="created DatabaseServiceTest class in test folder in service package" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
