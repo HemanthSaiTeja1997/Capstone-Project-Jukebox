@@ -78,4 +78,25 @@ public class PlayListRepository {
         }
 
     }
+
+    public String getURL(Connection connection, int songId) throws SQLException {
+
+        List<PlayList> list = new ArrayList<>();
+        // 1. write the query for selecting a song object from the `song` table
+        String getQuery = "SELECT`playlist_url`From `jukebox`.`playlist` where (`song_Id`=?);";
+        // 2. create a statement object
+        PreparedStatement preparedStatement = connection.prepareStatement(getQuery);
+        // 3. set the values of the query parameters
+        preparedStatement.setInt(1, songId);
+        //4. execute the query
+        ResultSet resultSet = preparedStatement.executeQuery();
+        String uRL = "";
+        while (resultSet.next()) {
+            // 6. fetch the values of the current row from the result set
+            uRL = resultSet.getString("playlist_url");
+            // 7. create a song object using the values fetched from the result set
+        }
+        System.out.println(uRL);
+        return uRL;
+    }
 }

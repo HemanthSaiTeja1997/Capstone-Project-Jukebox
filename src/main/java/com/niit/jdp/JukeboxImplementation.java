@@ -26,13 +26,13 @@ public class JukeboxImplementation {
         MusicPlayerService musicPlayerService = new MusicPlayerService();
         // playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
         System.out.println("select song id from song list to play song:");
-//        int songid = scanner.nextInt();
+        int songid = scanner.nextInt();
 //      String url = songRepository.getURL(connection, songid);
-
+        playListRepository.getURL(connection, songid);
 //        musicPlayerService.play(url);
-        System.out.println("Enter playlist name :");
-        String next = scanner.next();
-        playListRepository.toDisplaySelectedSongFromPlaylist(connection, next);
+        //  System.out.println("Enter playlist name :");
+//        String next = scanner.next();
+//        playListRepository.toDisplaySelectedSongFromPlaylist(connection, next);
 
 //        //songRepository.getById(connection,1);
 //

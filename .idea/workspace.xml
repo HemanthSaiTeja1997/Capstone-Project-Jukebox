@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added syntax changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a display method for displaying playlist according to playlist name">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/JukeboxImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/JukeboxImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,13 +158,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00051" summary="create a statement object">
-      <created>1663742382782</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1663742382782</updated>
     </task>
     <task id="LOCAL-00052" summary="set the values of the query parameters">
       <created>1663742965345</created>
@@ -504,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663879552802</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="created a display method for displaying playlist according to playlist name">
+      <created>1663882666128</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1663882666128</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -519,7 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create a statement object" />
     <MESSAGE value="set the values of the query parameters" />
     <MESSAGE value="execute the query" />
     <MESSAGE value="check if resultset is empty and fetch the values from result set and create song object using fetched values" />
@@ -544,7 +541,8 @@
     <MESSAGE value="added the changes in the code" />
     <MESSAGE value="added the displayAllPlayList" />
     <MESSAGE value="added syntax changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added syntax changes" />
+    <MESSAGE value="created a display method for displaying playlist according to playlist name" />
+    <option name="LAST_COMMIT_MESSAGE" value="created a display method for displaying playlist according to playlist name" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
