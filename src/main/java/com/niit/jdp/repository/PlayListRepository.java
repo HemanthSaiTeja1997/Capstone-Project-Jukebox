@@ -54,7 +54,7 @@ public class PlayListRepository {
             PlayList newSong = new PlayList(IdOfPlaylist, playListName, playlistSongId, urlOfPlaylist);
             playLists.add(newSong);
         }
-        return songList;
+        return playLists;
     }
 
 
