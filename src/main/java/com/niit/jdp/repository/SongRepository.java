@@ -8,6 +8,7 @@ package com.niit.jdp.repository;
 
 import com.niit.jdp.model.Song;
 import com.niit.jdp.service.DatabaseService;
+import com.niit.jdp.service.MusicPlayerService;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -19,11 +20,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SongRepository implements Repository<Song> {
+    MusicPlayerService music = new MusicPlayerService();
     @Override
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
         // 1. write the query for inserting a new Song object into the `song` table
-        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `genre`, `duration`,"
-                + " `url`) VALUES (?,?,?,?,?,?,?);";
+        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`, `genre`, `duration`," + " `url`) VALUES (?,?,?,?,?,?,?);";
         // 2. create a statement object
         int numberOfRowsAffected;
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
@@ -155,7 +156,7 @@ public class SongRepository implements Repository<Song> {
     }
 
     @Override
-    public void songs(Connection connection) throws SQLException {
+    public void songs(Connection connection) throws SQLException, ClassNotFoundException {
         Scanner scanner = new Scanner(System.in).useDelimiter("[,\\s+]");
         SongRepository songRepository = new SongRepository();
         PlayListRepository playListRepository = new PlayListRepository();
@@ -164,13 +165,16 @@ public class SongRepository implements Repository<Song> {
         do {
             System.out.println("Welcome to the Jukebox System");
             System.out.println("============================================");
-            System.out.println("1. To Display All the Songs");
+            System.out.println("1. To Display All the Songs from Song Menu and Play Any Song ");
+            System.out.println("8. To Display All the Songs from  playlist ");
+            System.out.println("2. Select any song that you want from songs or playlist:");
             System.out.println("2. Add a new songList to the database");
             System.out.println("3. Search By Artist Name");
             System.out.println("4. Search By Genre");
             System.out.println("5. Search By Album");
-            System.out.println("7. Exit");
+            System.out.println("5. Search By SongId");
             System.out.println("6. Select the songId to add into playlist from above song list");
+            System.out.println("7. Exit");
             System.out.println("============================================");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
@@ -179,9 +183,44 @@ public class SongRepository implements Repository<Song> {
                 databaseService.connect();
                 switch (choice) {
                     case 1:
-                        System.out.println("To Display All the Songs");
+                        System.out.println("DISPLAY SONGS FROM MENU : ");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
+                        System.out.println("Choose a songId that you wise to listen ");
+                        int songIdFormSongMenu = scanner.nextInt();
+                        String urlOfSongIdFromMenu = songRepository.getURL(connection, songIdFormSongMenu);
+                        music.play(urlOfSongIdFromMenu);
                         break;
+                    case 8:
+                        System.out.println("To Display All songs from playlist");
+                        playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
+                        System.out.println("Enter the playlist Name to display playlist : ");
+                        String name8 = scanner.next();
+                        playListRepository.toDisplaySelectedSongFromPlaylist(connection, name8);
+                        System.out.println("Choose a songId that you wish to listen : ");
+                        int songIDThatYouWishToPlay = scanner.nextInt();
+                        String urlForPlayingSelectedSong = playListRepository.getURL(connection, songIDThatYouWishToPlay);
+                        music.play(urlForPlayingSelectedSong);
+                        break;
+                    case 6:
+                        System.out.println("Please Enter playlist Name :");
+                        String playlistName = scanner.next();
+                        System.out.println("Please Enter song id with spaces");
+                        String input = scanner.next();
+                        String[] numbers = input.split(" ");
+                        for (String songID : numbers) {
+                            Song song3 = songRepository.getById(connection, Integer.parseInt(songID));
+                            boolean result = false;
+                            result = playListRepository.addSongDetails(connection, playlistName, song3);
+                            if (result) {
+                                System.out.println("Song added to playlist ");
+                            } else {
+                                System.out.println("Song not added to playlist");
+                            }
+                        }
+                        System.out.println("DISPLAY PLAYLIST");
+                        playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
+                        break;
+
                     case 2:
                         System.out.println("Add a new songList to the database");
                         System.out.println("Enter the songId: ");
@@ -217,25 +256,6 @@ public class SongRepository implements Repository<Song> {
                         System.out.println("To Search By Album");
                         String albumName = scanner.next();
                         songRepository.searchByAlbumAndSortByName(connection, albumName).forEach(System.out::println);
-                        break;
-                    case 6:
-                        System.out.println("Please Enter playlist Name :");
-                        String playlistName = scanner.next();
-                        System.out.println("Please Enter song id with spaces");
-                        String input = scanner.next();
-                        String[] numbers = input.split(" ");
-                        for (String songID : numbers) {
-                            Song song3 = songRepository.getById(connection, Integer.parseInt(songID));
-                            boolean result = false;
-                            result = playListRepository.addSongDetails(connection, playlistName, song3);
-                            if (result) {
-                                System.out.println("Song added to playlist ");
-                            } else {
-                                System.out.println("Song not added to playlist");
-                            }
-                        }
-                        System.out.println("DISPLAY PLAYLIST");
-                        playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
                         break;
                     case 7:
                         System.out.println("Exit");
@@ -302,4 +322,5 @@ public class SongRepository implements Repository<Song> {
     }
 
 }
+
 

@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface Repository<T> {
-    public abstract void songs(Connection connection) throws SQLException;
+    public abstract void songs(Connection connection) throws SQLException, ClassNotFoundException;
 
     public boolean addSongDetails(Connection connection, T object) throws SQLException;
 
