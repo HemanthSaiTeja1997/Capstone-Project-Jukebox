@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added the switch case for playing the song">
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added changes in the switch case for playing the song">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00054" summary="inserted songs in the song table">
-      <created>1663752020952</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1663752020953</updated>
     </task>
     <task id="LOCAL-00055" summary="created a method to select song list based on artist name">
       <created>1663752552770</created>
@@ -502,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663911171925</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="added changes in the switch case for playing the song">
+      <created>1663914889505</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1663914889505</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="check if resultset is empty and fetch the values from result set and create song object using fetched values" />
     <MESSAGE value="created a song method for selecting different options from jukebox" />
     <MESSAGE value="added all the methodology for song method" />
     <MESSAGE value="changed the syntax" />
@@ -542,7 +542,8 @@
     <MESSAGE value="created a display method for displaying playlist according to playlist name" />
     <MESSAGE value="created a getUrl method for retrieving the url from PlayListRepository" />
     <MESSAGE value="added the switch case for playing the song" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the switch case for playing the song" />
+    <MESSAGE value="added changes in the switch case for playing the song" />
+    <option name="LAST_COMMIT_MESSAGE" value="added changes in the switch case for playing the song" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

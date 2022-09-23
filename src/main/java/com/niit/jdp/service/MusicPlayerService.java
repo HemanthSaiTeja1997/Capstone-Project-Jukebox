@@ -28,6 +28,10 @@ public class MusicPlayerService {
             // 7. start the sound file
             clip.start();
             System.out.println("YOU ARE NOW LISTENING TO YOUR SELECTED SONG");
+            System.out.println("Press any integer to stop the song");
+            int stop = scanner.nextInt();
+
+            clip.stop();
 
             // 8. pause the current thread for the time the song is being played
             long songDurationInMilliseconds = clip.getMicrosecondLength() / 1000L;

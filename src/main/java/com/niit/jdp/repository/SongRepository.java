@@ -221,7 +221,8 @@ public class SongRepository implements Repository<Song> {
                         break;
 
                     case 4:
-                        System.out.println("To Search By Artist Name");
+                        songRepository.getAllSongs(connection).forEach(System.out::println);
+                        System.out.println("To Search songs By Artist Name and Play Song");
                         String artistName = scanner.next();
                         songRepository.searchByArtistAndSortByName(connection, artistName).forEach(System.out::println);
                         System.out.println("Choose a songId form Artist you wish to listen");
@@ -231,6 +232,7 @@ public class SongRepository implements Repository<Song> {
                         music.play(urlOfSongIdFromArtistThatToPlay);
                         break;
                     case 5:
+                        songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search By Genre");
                         String genreName = scanner.next();
                         songRepository.searchByGenreAndSortByName(connection, genreName).forEach(System.out::println);
@@ -241,6 +243,7 @@ public class SongRepository implements Repository<Song> {
                         music.play(urlOfSongIdFromGenreThatToPlay);
                         break;
                     case 6:
+                        songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search By Album");
                         String albumName = scanner.next();
                         songRepository.searchByAlbumAndSortByName(connection, albumName).forEach(System.out::println);
