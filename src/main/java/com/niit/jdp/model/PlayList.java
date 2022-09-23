@@ -13,15 +13,17 @@ public class PlayList {
     private String playListName;
     private int songId;
     private String playlistUrl;
+    private String songNameOfPlaylist;
 
     public PlayList() {
     }
 
-    public PlayList(int playListId, String playListName, int songId, String playlistUrl) {
+    public PlayList(int playListId, String playListName, int songId, String playlistUrl, String songNameOfPlaylist) {
         this.playListId = playListId;
         this.playListName = playListName;
         this.songId = songId;
         this.playlistUrl = playlistUrl;
+        this.songNameOfPlaylist = songNameOfPlaylist;
     }
 
     public int getPlayListId() {
@@ -56,17 +58,25 @@ public class PlayList {
         this.playlistUrl = playlistUrl;
     }
 
+    public String getSongNameOfPlaylist() {
+        return songNameOfPlaylist;
+    }
+
+    public void setSongNameOfPlaylist(String songNameOfPlaylist) {
+        this.songNameOfPlaylist = songNameOfPlaylist;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         PlayList playList = (PlayList) o;
-        return playListId == playList.playListId && songId == playList.songId && Objects.equals(playListName, playList.playListName) && Objects.equals(playlistUrl, playList.playlistUrl);
+        return playListId == playList.playListId && songId == playList.songId && Objects.equals(playListName, playList.playListName) && Objects.equals(playlistUrl, playList.playlistUrl) && Objects.equals(songNameOfPlaylist, playList.songNameOfPlaylist);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(playListId, playListName, songId, playlistUrl);
+        return Objects.hash(playListId, playListName, songId, playlistUrl, songNameOfPlaylist);
     }
 
     @Override
@@ -76,6 +86,7 @@ public class PlayList {
                 ", playListName='" + playListName + '\'' +
                 ", songId=" + songId +
                 ", playlistUrl='" + playlistUrl + '\'' +
+                ", songNameOfPlaylist='" + songNameOfPlaylist + '\'' +
                 '}';
     }
 }

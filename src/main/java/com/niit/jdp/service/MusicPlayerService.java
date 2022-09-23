@@ -32,7 +32,6 @@ public class MusicPlayerService {
             int stop = scanner.nextInt();
 
             clip.stop();
-
             // 8. pause the current thread for the time the song is being played
             long songDurationInMilliseconds = clip.getMicrosecondLength() / 1000L;
             Thread.sleep(songDurationInMilliseconds);
@@ -42,5 +41,6 @@ public class MusicPlayerService {
         } catch (InterruptedException exception) {
             System.err.println("song thread was interrupted");
         }
+        scanner.close();
     }
 }
