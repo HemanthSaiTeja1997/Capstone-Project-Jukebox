@@ -13,6 +13,7 @@ import java.util.Scanner;
 
 public class MusicPlayerService {
     Scanner scanner = new Scanner(System.in);
+
     public void play(String songPath) {
         // 2. a file object that contains our song
         File songFile = new File(songPath);
@@ -28,19 +29,20 @@ public class MusicPlayerService {
             // 7. start the sound file
             clip.start();
             System.out.println("YOU ARE NOW LISTENING TO YOUR SELECTED SONG");
+
+            // 8. pause the current thread for the time the song is being played
+//            long songDurationInMilliseconds = clip.getMicrosecondLength() / 100000L;
+//            Thread.sleep(songDurationInMilliseconds);
             System.out.println("Press any integer to stop the song");
             int stop = scanner.nextInt();
-
             clip.stop();
-            // 8. pause the current thread for the time the song is being played
-            long songDurationInMilliseconds = clip.getMicrosecondLength() / 1000L;
-            Thread.sleep(songDurationInMilliseconds);
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {
             System.err.println(exception.getMessage());
             exception.printStackTrace();
-        } catch (InterruptedException exception) {
-            System.err.println("song thread was interrupted");
+//        } catch (InterruptedException exception) {
+//            System.err.println("song thread was interrupted");
+//        }
+            scanner.close();
         }
-        scanner.close();
     }
 }

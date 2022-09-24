@@ -16,3 +16,7 @@ Z
 *src/main/java/com/niit/jdp/model/Song.java,0\1\014d77068afdd61babac0f449091ee271adda5cb
 e
 5src/main/java/com/niit/jdp/repository/Repository.java,b\f\bf6f65185120d5158c3b2f1089d03db6c03b1b2b
+^
+.src/main/java/com/niit/jdp/model/PlayList.java,7\8\785862512ee3cf8ee540533c6bc419816712a50f
+m
+=src/main/java/com/niit/jdp/repository/PlayListRepository.java,4\4\44f1e74fcae734be19b5f4003c62bb6be620937b

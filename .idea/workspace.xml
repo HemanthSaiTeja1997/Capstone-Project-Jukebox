@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added the changes" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added the syntax changes">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/MusicPlayerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/service/MusicPlayerService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,13 +160,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00057" summary="set the values for the query parameter">
-      <created>1663752897268</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1663752897268</updated>
     </task>
     <task id="LOCAL-00058" summary="execute the query">
       <created>1663753129684</created>
@@ -499,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663926405990</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="added the syntax changes">
+      <created>1663927049130</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1663927049130</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +528,6 @@
     <MESSAGE value="changed the Repository interface" />
     <MESSAGE value="create sql query to retrieve all the row" />
     <MESSAGE value="use the connection object to execute the query for selecting the songs" />
-    <MESSAGE value="added the syntax changes" />
     <MESSAGE value="added the junit jupiter 5.9.0 for test cases" />
     <MESSAGE value="created SongRepositoryTest class in test folder" />
     <MESSAGE value="created DatabaseServiceTest class in test folder in service package" />
@@ -539,7 +543,8 @@
     <MESSAGE value="added changes in the switch case for playing the song" />
     <MESSAGE value="added the stop option" />
     <MESSAGE value="added the changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the changes" />
+    <MESSAGE value="added the syntax changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the syntax changes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
