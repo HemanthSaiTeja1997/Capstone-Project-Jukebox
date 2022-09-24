@@ -33,7 +33,7 @@ public class MusicPlayerService {
             // 8. pause the current thread for the time the song is being played
 //            long songDurationInMilliseconds = clip.getMicrosecondLength() / 100000L;
 //            Thread.sleep(songDurationInMilliseconds);
-            System.out.println("Press any integer to stop the song");
+            System.out.println("\u001B[31mPress any integer to stop the song\u001B[0m");
             int stop = scanner.nextInt();
             clip.stop();
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException exception) {

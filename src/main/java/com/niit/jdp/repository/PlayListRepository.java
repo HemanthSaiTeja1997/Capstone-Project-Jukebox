@@ -19,8 +19,6 @@ public class PlayListRepository {
         int numberOfRowsAffected = 0;
         try {
             Statement stmt = connection.createStatement();
-            ResultSet rs = stmt.executeQuery("select * from playlist");
-
             String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlist_name`, `song_Id`," +
                     " `playlist_url`, `songName`) VALUES (?,?,?,?);";
             // 2. create a statement object

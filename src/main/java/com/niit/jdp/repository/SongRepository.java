@@ -163,16 +163,16 @@ public class SongRepository implements Repository<Song> {
         DatabaseService databaseService = new DatabaseService();
         int choice = -1;
         do {
-            System.out.println("Welcome to the Jukebox System");
+            System.out.println("\u001B[32m Welcome to the Jukebox System\u001B[0m");
             System.out.println("============================================");
-            System.out.println("1. To Display All the Songs from Song Menu and Play Any Song ");
+            System.out.println("\u001B[36m1. To Display All the Songs from Song Menu and Play Any Song ");
             System.out.println("2. To Display All the Songs from  playlist Menu and Play Any Song ");
             System.out.println("3. Add a new songList to the database by the owner of jukebox ");
             System.out.println("4. Search By Artist Name");
             System.out.println("5. Search By Genre");
             System.out.println("6. Search By Album");
-            System.out.println("7. Select the songId to add into playlist from above song list");
-            System.out.println("8. Exit");
+            System.out.println("7. Select the songId to add into playlist from above song list\u001B[0m");
+            System.out.println("\u001B[31m8. Exit\u001B[0m");
             System.out.println("============================================");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
@@ -181,10 +181,10 @@ public class SongRepository implements Repository<Song> {
                 databaseService.connect();
                 switch (choice) {
                     case 1:
-                        System.out.println("DISPLAY SONGS FROM MENU : ");
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("\u001B[32m********************************************* SONG MENU  **************************************************************** \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
+                        System.out.println("\u001B[34m SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("Choose a songId that you wise to listen ");
                         int songIdFormSongMenu = scanner.nextInt();
@@ -195,7 +195,7 @@ public class SongRepository implements Repository<Song> {
                             System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
                             music.play(urlOfSongIdFromMenu);
                         } else {
-                            System.err.println("Exited from MusicPlayer");
+                            System.out.println("*********************\u001B[31mExited from MusicPlayer\u001B[0m *********************");
                         }
                         break;
                     case 2:
