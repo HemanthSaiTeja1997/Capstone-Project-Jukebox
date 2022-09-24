@@ -81,12 +81,7 @@ public class PlayList {
 
     @Override
     public String toString() {
-        return "PlayList{" +
-                "playListId=" + playListId +
-                ", playListName='" + playListName + '\'' +
-                ", songId=" + songId +
-                ", playlistUrl='" + playlistUrl + '\'' +
-                ", songNameOfPlaylist='" + songNameOfPlaylist + '\'' +
-                '}';
+        return String.format("%-20s %-25s %-20s ", playListName, songId, songNameOfPlaylist);
+
     }
 }

@@ -200,6 +200,9 @@ public class SongRepository implements Repository<Song> {
                         break;
                     case 2:
                         System.out.println("To Display All songs from playlist");
+                        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("PLAYLIST_NAME      SONG_ID                        SONG_NAME");
+                        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                         playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
                         System.out.println("Enter the playlist Name to display playlist : ");
                         String name8 = scanner.next();
