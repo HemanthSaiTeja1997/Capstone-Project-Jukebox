@@ -186,7 +186,14 @@ public class SongRepository implements Repository<Song> {
                         System.out.println("Choose a songId that you wise to listen ");
                         int songIdFormSongMenu = scanner.nextInt();
                         String urlOfSongIdFromMenu = songRepository.getURL(connection, songIdFormSongMenu);
-                        music.play(urlOfSongIdFromMenu);
+                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        int option = scanner.nextInt();
+                        if (option == 1) {
+                            System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
+                            music.play(urlOfSongIdFromMenu);
+                        } else {
+                            System.err.println("Exited from MusicPlayer");
+                        }
                         break;
                     case 2:
                         System.out.println("To Display All songs from playlist");
@@ -197,29 +204,43 @@ public class SongRepository implements Repository<Song> {
                         System.out.println("Choose a songId that you wish to listen : ");
                         int songIDThatYouWishToPlay = scanner.nextInt();
                         String urlForPlayingSelectedSong = playListRepository.getURL(connection, songIDThatYouWishToPlay);
-                        music.play(urlForPlayingSelectedSong);
+                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        int option9 = scanner.nextInt();
+                        if (option9 == 1) {
+                            System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
+                            music.play(urlForPlayingSelectedSong);
+                        } else {
+                            System.err.println("Exited from MusicPlayer");
+                        }
                         break;
                     case 3:
-                        System.out.println("Add a new songList to the database");
-                        System.out.println("Enter the songId: ");
-                        int songId = scanner.nextInt();
-                        System.out.println("Enter the song name: ");
-                        String songName = scanner.next();
-                        System.out.println("Enter the albumName: ");
-                        String album = scanner.next();
-                        System.out.println("Enter the artistName: ");
-                        String artistName1 = scanner.next();
-                        System.out.println("Enter the song Genre: ");
-                        String genre = scanner.next();
-                        System.out.println("Enter the song duration: ");
-                        String duration = scanner.next();
-                        System.out.println("Enter the song URL: ");
-                        String uRL = scanner.next();
-                        Song song = new Song(songId, songName, album, artistName1, genre, duration, uRL);
-                        songRepository.addSongDetails(connection, song);
-                        System.out.println("\u001B[32mA New Song List Entered successfully.\u001B[0m");
+                        System.out.println("you can add song to song list only if you are owner of this jukebox");
+                        System.out.println("Enter the USER PASSWORD");
+                        int password = scanner.nextInt();
+                        if (password == 123456789) {
+                            System.out.println("PASSWORD MATCHED");
+                            System.out.println("Add a new songList to the database");
+                            System.out.println("Enter the songId: ");
+                            int songId = scanner.nextInt();
+                            System.out.println("Enter the song name: ");
+                            String songName = scanner.next();
+                            System.out.println("Enter the albumName: ");
+                            String album = scanner.next();
+                            System.out.println("Enter the artistName: ");
+                            String artistName1 = scanner.next();
+                            System.out.println("Enter the song Genre: ");
+                            String genre = scanner.next();
+                            System.out.println("Enter the song duration: ");
+                            String duration = scanner.next();
+                            System.out.println("Enter the song URL: ");
+                            String uRL = scanner.next();
+                            Song song = new Song(songId, songName, album, artistName1, genre, duration, uRL);
+                            songRepository.addSongDetails(connection, song);
+                            System.out.println("\u001B[32mA New Song List Entered successfully.\u001B[0m");
+                        } else {
+                            System.err.println("ENTERED WRONG PASSWORD");
+                        }
                         break;
-
                     case 4:
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search songs By Artist Name and Play Song");
@@ -229,7 +250,14 @@ public class SongRepository implements Repository<Song> {
                         int songIdThatYouWantToChooseFromArtistList = scanner.nextInt();
                         songRepository.getById(connection, songIdThatYouWantToChooseFromArtistList);
                         String urlOfSongIdFromArtistThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromArtistList);
-                        music.play(urlOfSongIdFromArtistThatToPlay);
+                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        int option2 = scanner.nextInt();
+                        if (option2 == 1) {
+                            System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
+                            music.play(urlOfSongIdFromArtistThatToPlay);
+                        } else {
+                            System.err.println("Exited from MusicPlayer");
+                        }
                         break;
                     case 5:
                         songRepository.getAllSongs(connection).forEach(System.out::println);
@@ -240,7 +268,14 @@ public class SongRepository implements Repository<Song> {
                         int songIdThatYouWantToChooseFromGenre = scanner.nextInt();
                         songRepository.getById(connection, songIdThatYouWantToChooseFromGenre);
                         String urlOfSongIdFromGenreThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromGenre);
-                        music.play(urlOfSongIdFromGenreThatToPlay);
+                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        int option3 = scanner.nextInt();
+                        if (option3 == 1) {
+                            System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
+                            music.play(urlOfSongIdFromGenreThatToPlay);
+                        } else {
+                            System.err.println("Exited from MusicPlayer");
+                        }
                         break;
                     case 6:
                         songRepository.getAllSongs(connection).forEach(System.out::println);
@@ -251,7 +286,14 @@ public class SongRepository implements Repository<Song> {
                         int songIdThatYouWantToChooseFromAlbum = scanner.nextInt();
                         songRepository.getById(connection, songIdThatYouWantToChooseFromAlbum);
                         String urlOfSongIdFromAlbumThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromAlbum);
-                        music.play(urlOfSongIdFromAlbumThatToPlay);
+                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        int option4 = scanner.nextInt();
+                        if (option4 == 1) {
+                            System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
+                            music.play(urlOfSongIdFromAlbumThatToPlay);
+                        } else {
+                            System.err.println("Exited from MusicPlayer");
+                        }
                         break;
                     case 7:
                         System.out.println("Please Enter playlist Name :");
