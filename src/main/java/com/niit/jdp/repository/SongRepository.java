@@ -166,8 +166,8 @@ public class SongRepository implements Repository<Song> {
             System.out.println("Welcome to the Jukebox System");
             System.out.println("============================================");
             System.out.println("1. To Display All the Songs from Song Menu and Play Any Song ");
-            System.out.println("2. To Display All the Songs from  playlist ");
-            System.out.println("3. Add a new songList to the database");
+            System.out.println("2. To Display All the Songs from  playlist Menu and Play Any Song ");
+            System.out.println("3. Add a new songList to the database by the owner of jukebox ");
             System.out.println("4. Search By Artist Name");
             System.out.println("5. Search By Genre");
             System.out.println("6. Search By Album");
@@ -182,6 +182,9 @@ public class SongRepository implements Repository<Song> {
                 switch (choice) {
                     case 1:
                         System.out.println("DISPLAY SONGS FROM MENU : ");
+                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
+                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("Choose a songId that you wise to listen ");
                         int songIdFormSongMenu = scanner.nextInt();
@@ -242,9 +245,13 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 4:
+                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
+                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search songs By Artist Name and Play Song");
                         String artistName = scanner.next();
+                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
                         songRepository.searchByArtistAndSortByName(connection, artistName).forEach(System.out::println);
                         System.out.println("Choose a songId form Artist you wish to listen");
                         int songIdThatYouWantToChooseFromArtistList = scanner.nextInt();
@@ -260,9 +267,13 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 5:
+                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
+                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search By Genre");
                         String genreName = scanner.next();
+                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
                         songRepository.searchByGenreAndSortByName(connection, genreName).forEach(System.out::println);
                         System.out.println("Choose a songId form Genre you wish to listen");
                         int songIdThatYouWantToChooseFromGenre = scanner.nextInt();
@@ -278,9 +289,13 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 6:
+                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
+                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search By Album");
                         String albumName = scanner.next();
+                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
                         songRepository.searchByAlbumAndSortByName(connection, albumName).forEach(System.out::println);
                         System.out.println("Choose a songId form Album you wish to listen");
                         int songIdThatYouWantToChooseFromAlbum = scanner.nextInt();
