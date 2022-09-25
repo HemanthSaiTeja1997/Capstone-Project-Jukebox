@@ -24,7 +24,6 @@ public class JukeboxImplementation {
         SongRepository songRepository = new SongRepository();
         PlayListRepository playListRepository = new PlayListRepository();
         MusicPlayerService musicPlayerService = new MusicPlayerService();
-        songRepository.
-                songs(connection);
+        songRepository.songs(connection);
     }
 }
