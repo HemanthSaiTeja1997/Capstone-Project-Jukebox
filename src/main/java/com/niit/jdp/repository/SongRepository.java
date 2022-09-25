@@ -6,6 +6,7 @@
 
 package com.niit.jdp.repository;
 
+import com.niit.jdp.exception.SongNotFoundException;
 import com.niit.jdp.model.Song;
 import com.niit.jdp.service.DatabaseService;
 import com.niit.jdp.service.MusicPlayerService;
@@ -21,6 +22,7 @@ import java.util.Scanner;
 
 public class SongRepository implements Repository<Song> {
     MusicPlayerService music = new MusicPlayerService();
+
     @Override
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
         // 1. write the query for inserting a new Song object into the `song` table
@@ -157,12 +159,12 @@ public class SongRepository implements Repository<Song> {
     }
 
     @Override
-    public void songs(Connection connection) throws SQLException, ClassNotFoundException {
+    public void songs(Connection connection) throws SQLException {
         Scanner scanner = new Scanner(System.in).useDelimiter("[,\\s+]");
         SongRepository songRepository = new SongRepository();
         PlayListRepository playListRepository = new PlayListRepository();
         DatabaseService databaseService = new DatabaseService();
-        int choice = -1;
+        int choice;
         do {
             System.out.println("\u001B[32m Welcome to the Jukebox System\u001B[0m");
             System.out.println("============================================");
@@ -207,6 +209,7 @@ public class SongRepository implements Repository<Song> {
                         playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
                         System.out.println("Enter the playlist Name to display playlist : ");
                         String name8 = scanner.next();
+                        System.out.println("SONG_ID        PLAYLIST_NAME       SONG_NAME  ");
                         playListRepository.toDisplaySelectedSongFromPlaylist(connection, name8);
                         System.out.println("Choose a songId that you wish to listen : ");
                         int songIDThatYouWishToPlay = scanner.nextInt();
@@ -322,7 +325,7 @@ public class SongRepository implements Repository<Song> {
                         String[] numbers = input.split(" ");
                         for (String songID : numbers) {
                             Song song3 = songRepository.getById(connection, Integer.parseInt(songID));
-                            boolean result = false;
+                            boolean result;
                             result = playListRepository.addSongDetails(connection, playlistName, song3);
                             if (result) {
                                 System.out.println("Song added to playlist ");
@@ -342,7 +345,6 @@ public class SongRepository implements Repository<Song> {
 
             } catch (ClassNotFoundException exception) {
                 exception.printStackTrace();
-                System.out.println(exception);
             }
         } while (choice != 8);
     }
@@ -387,12 +389,17 @@ public class SongRepository implements Repository<Song> {
                 String uRL = resultSet.getString("url");
                 // 7. create a song object using the values fetched from the result set
                 song = new Song(songId, songName, album, artistName, gener, duration, uRL);
+                if (songId == 0) {
+                    throw new SongNotFoundException("The song is not in the list!! Try using Valid choice.");
 
+                }
             }
-            return song;
+        } catch (SongNotFoundException exception) {
+            System.out.println(exception.getMessage());
         }
-    }
 
+        return song;
+    }
 }
 
 

@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="created a custom exceptions">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/exception/SongNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/exception/SongNotFoundException.java" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added the logic for song not found exception">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/PlayListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/DatabaseServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +31,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2F20BFZKGYlhFtF4S0X5rhu9bXt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -149,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00065" summary="create a method to search by genre and sort by name">
-      <created>1663774218554</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1663774218555</updated>
     </task>
     <task id="LOCAL-00066" summary="select song list from song table by genre name">
       <created>1663774418987</created>
@@ -493,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664122419832</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="added the logic for song not found exception">
+      <created>1664122579836</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1664122579836</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -512,7 +520,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create sql query to retrieve all the row" />
     <MESSAGE value="use the connection object to execute the query for selecting the songs" />
     <MESSAGE value="added the junit jupiter 5.9.0 for test cases" />
     <MESSAGE value="created SongRepositoryTest class in test folder" />
@@ -537,7 +544,8 @@
     <MESSAGE value="added the changes in the songListRepository" />
     <MESSAGE value="syntax change" />
     <MESSAGE value="created a custom exceptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a custom exceptions" />
+    <MESSAGE value="added the logic for song not found exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the logic for song not found exception" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

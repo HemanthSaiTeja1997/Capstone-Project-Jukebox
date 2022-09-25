@@ -18,7 +18,7 @@ class DatabaseServiceTest {
     private Connection connection;
 
     String printConnectionStatus1() {
-        String expectedResult = "";
+        String expectedResult;
         if (connection != null) {
             System.out.println("\u001B[32m Connected to the database.\u001B[0m");
             expectedResult = "Connected to the database";
@@ -30,7 +30,7 @@ class DatabaseServiceTest {
     }
 
     @BeforeEach
-    void setUp() throws SQLException {
+    void setUp() {
         databaseService = new DatabaseService();
     }
 
