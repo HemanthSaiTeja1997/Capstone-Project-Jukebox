@@ -10,7 +10,3 @@ G.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302,e\d\ed
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 g
 7src/main/java/com/niit/jdp/service/DatabaseService.java,d\f\df915df9a9d3dc9bcfe75dc66a18455a235f099a
-e
-5src/main/java/com/niit/jdp/repository/Repository.java,b\f\bf6f65185120d5158c3b2f1089d03db6c03b1b2b
-j
-:src/main/java/com/niit/jdp/service/MusicPlayerService.java,5\d\5d5323783bdf3661905efe3c18da2468f4f85e54

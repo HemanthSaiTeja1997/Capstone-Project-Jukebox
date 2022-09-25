@@ -78,7 +78,7 @@ public class PlayList {
 
     @Override
     public String toString() {
-        return String.format("%-20s %-25s %-20s ", playListName, songId, songNameOfPlaylist);
+        return String.format("\u001B[35m%-20s %-25s %-20s \u001B[0m", playListName, songId, songNameOfPlaylist);
 
     }
 }

@@ -202,19 +202,21 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 2:
-                        System.out.println("To Display All songs from playlist");
-                        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                        System.out.println("PLAYLIST_NAME      SONG_ID                        SONG_NAME");
-                        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("*************\u001B[32mDisplaying All Songs From Playlist\u001B[0m *************");
+                        System.out.println("\u001B[33m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
+                        System.out.println("\u001B[34mPLAYLIST_NAME      SONG_ID                        SONG_NAME\u001B[0m");
+                        System.out.println("\u001B[33m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
                         playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
                         System.out.println("Enter the playlist Name to display playlist : ");
                         String name8 = scanner.next();
-                        System.out.println("SONG_ID           SONG_NAME  ");
+                        System.out.println("\u001B[33m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
+                        System.out.println("\u001B[34mSONG_ID           SONG_NAME  \u001B[0m");
+                        System.out.println("\u001B[33m++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
                         playListRepository.toDisplaySelectedSongFromPlaylist(connection, name8);
                         System.out.println("Choose a songId that you wish to listen : ");
                         int songIDThatYouWishToPlay = scanner.nextInt();
                         String urlForPlayingSelectedSong = playListRepository.getURL(connection, songIDThatYouWishToPlay);
-                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        System.out.println("\u001B[32m Enter 1 to play : Enter 0 to Exit\u001B[0m");
                         int option9 = scanner.nextInt();
                         if (option9 == 1) {
                             System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
@@ -252,9 +254,10 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 4:
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("\u001B[32m********************************************* SONG MENU  **************************************************************** \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
+                        System.out.println("\u001B[34m SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search songs By Artist Name and Play Song");
                         String artistName = scanner.next();
@@ -264,7 +267,7 @@ public class SongRepository implements Repository<Song> {
                         int songIdThatYouWantToChooseFromArtistList = scanner.nextInt();
                         songRepository.getById(connection, songIdThatYouWantToChooseFromArtistList);
                         String urlOfSongIdFromArtistThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromArtistList);
-                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        System.out.println("\u001B[32m Enter 1 to play : Enter 0 to Exit\u001B[0m");
                         int option2 = scanner.nextInt();
                         if (option2 == 1) {
                             System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
@@ -274,9 +277,10 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 5:
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("\u001B[32m********************************************* SONG MENU  **************************************************************** \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
+                        System.out.println("\u001B[34m SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search By Genre");
                         String genreName = scanner.next();
@@ -286,7 +290,7 @@ public class SongRepository implements Repository<Song> {
                         int songIdThatYouWantToChooseFromGenre = scanner.nextInt();
                         songRepository.getById(connection, songIdThatYouWantToChooseFromGenre);
                         String urlOfSongIdFromGenreThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromGenre);
-                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        System.out.println("\u001B[32m Enter 1 to play : Enter 0 to Exit\u001B[0m");
                         int option3 = scanner.nextInt();
                         if (option3 == 1) {
                             System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
@@ -296,9 +300,10 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 6:
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-                        System.out.println("SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   ");
-                        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+                        System.out.println("\u001B[32m********************************************* SONG MENU  **************************************************************** \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
+                        System.out.println("\u001B[34m SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
                         songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("To Search By Album");
                         String albumName = scanner.next();
@@ -308,7 +313,7 @@ public class SongRepository implements Repository<Song> {
                         int songIdThatYouWantToChooseFromAlbum = scanner.nextInt();
                         songRepository.getById(connection, songIdThatYouWantToChooseFromAlbum);
                         String urlOfSongIdFromAlbumThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromAlbum);
-                        System.out.println(" Enter 1 to play : Enter 0 to Exit");
+                        System.out.println("\u001B[32m Enter 1 to play : Enter 0 to Exit\u001B[0m");
                         int option4 = scanner.nextInt();
                         if (option4 == 1) {
                             System.out.println("* \u001B[32m SONG PLAYING \u001B[0m *");
@@ -318,9 +323,14 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 7:
+                        System.out.println("\u001B[32m********************************************* SONG MENU  **************************************************************** \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
+                        System.out.println("\u001B[34m SONG_ID             SONG_NAME                  ALBUM                    ARTIST              GENRE         DURATION   \u001B[0m");
+                        System.out.println("\u001B[33m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\u001B[0m");
+                        songRepository.getAllSongs(connection).forEach(System.out::println);
                         System.out.println("Please Enter playlist Name :");
                         String playlistName = scanner.next();
-                        System.out.println("Please Enter song id with spaces");
+                        System.out.println("Please Enter song Id");
                         String input = scanner.next();
                         String[] numbers = input.split(" ");
                         for (String songID : numbers) {
