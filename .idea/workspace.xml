@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added the changes">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="optimized the code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/model/PlayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/service/MusicPlayerServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,7 @@
       <recent name="com.niit.jdp.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JukeboxImplementation">
+  <component name="RunManager" selected="JUnit.SongRepositoryTest.getAllSongs">
     <configuration name="JukeboxImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.JukeboxImplementation" />
       <module name="Capstone-Project-Jukebox" />
@@ -150,8 +146,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JukeboxImplementation" />
         <item itemvalue="JUnit.SongRepositoryTest.getAllSongs" />
+        <item itemvalue="Application.JukeboxImplementation" />
         <item itemvalue="JUnit.DatabaseServiceTest" />
         <item itemvalue="JUnit.DatabaseServiceTest.printConnectionStatusFailure" />
         <item itemvalue="JUnit.DatabaseServiceTest.connectFailure" />
@@ -166,13 +162,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00069" summary="set the values of the query parameter">
-      <created>1663774788857</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1663774788857</updated>
     </task>
     <task id="LOCAL-00070" summary="execute the query">
       <created>1663774817075</created>
@@ -510,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664127752939</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="optimized the code">
+      <created>1664135299265</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1664135299265</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -529,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added the junit jupiter 5.9.0 for test cases" />
     <MESSAGE value="created SongRepositoryTest class in test folder" />
     <MESSAGE value="created DatabaseServiceTest class in test folder in service package" />
     <MESSAGE value="added the test case for connect test case" />
@@ -554,7 +549,8 @@
     <MESSAGE value="added the syntax changes" />
     <MESSAGE value="added the sql file" />
     <MESSAGE value="added the changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the changes" />
+    <MESSAGE value="optimized the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized the code" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
