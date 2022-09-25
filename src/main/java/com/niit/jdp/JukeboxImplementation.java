@@ -13,6 +13,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 public class JukeboxImplementation {
+    /**
+     * It connects to the database and prints out the songs in the database.
+     */
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         DatabaseService databaseService = new DatabaseService();
         databaseService.connect();

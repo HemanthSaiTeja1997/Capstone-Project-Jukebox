@@ -23,11 +23,17 @@ import java.util.Scanner;
 public class SongRepository implements Repository<Song> {
     MusicPlayerService music = new MusicPlayerService();
 
+    /**
+     * It takes a `Connection` object and a `Song` object as parameters, and returns a boolean value
+     *
+     * @param connection The connection object that is used to connect to the database.
+     * @param song       The Song object that needs to be added to the database.
+     * @return The number of rows affected by the query.
+     */
     @Override
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
         // 1. write the query for inserting a new Song object into the `song` table
-        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`," +
-                " `genre`, `duration`,`url`) VALUES (?,?,?,?,?,?,?);";
+        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`," + " `genre`, `duration`,`url`) VALUES (?,?,?,?,?,?,?);";
         // 2. create a statement object
         int numberOfRowsAffected;
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
@@ -44,6 +50,13 @@ public class SongRepository implements Repository<Song> {
         return numberOfRowsAffected > 0;
     }
 
+    /**
+     * It creates a SQL query to select all the rows from the Song table, executes the query using the connection object,
+     * iterates over the result set and creates a Song object for each row and returns the list of Song objects
+     *
+     * @param connection This is the connection object that we created in the main method.
+     * @return A list of all the songs in the database.
+     */
     @Override
     public List<Song> getAllSongs(Connection connection) throws SQLException {
         List<Song> songList = new ArrayList<>();
@@ -67,6 +80,13 @@ public class SongRepository implements Repository<Song> {
         return songList;
     }
 
+    /**
+     * It takes a connection object and an artist name as input and returns a list of songs by that artist sorted by name
+     *
+     * @param connection The connection object that is used to connect to the database.
+     * @param artist     The artist name to search for.
+     * @return A list of songs that are sorted by name.
+     */
     @Override
     public List<Song> searchByArtistAndSortByName(Connection connection, String artist) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
@@ -98,6 +118,13 @@ public class SongRepository implements Repository<Song> {
         }
     }
 
+    /**
+     * It takes a connection object and a genre as input and returns a list of songs that belong to the given genre
+     *
+     * @param connection The connection object that is used to connect to the database.
+     * @param genre      The genre of the song.
+     * @return A list of songs that are sorted by name.
+     */
     @Override
     public List<Song> searchByGenreAndSortByName(Connection connection, String genre) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
@@ -128,6 +155,13 @@ public class SongRepository implements Repository<Song> {
         }
     }
 
+    /**
+     * It takes a connection object and a string as input and returns a list of song objects
+     *
+     * @param connection The connection object that is used to connect to the database.
+     * @param album      The album name to search for.
+     * @return A list of songs that match the album name and are sorted by name.
+     */
     @Override
     public List<Song> searchByAlbumAndSortByName(Connection connection, String album) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
@@ -158,6 +192,13 @@ public class SongRepository implements Repository<Song> {
         }
     }
 
+    /**
+     * This function is used to display all the songs from the song menu and play any song, display all the songs from the
+     * playlist menu and play any song, add a new song list to the database by the owner of the jukebox, search by artist
+     * name, search by genre, search by album, select the song id to add into playlist from above song list and exit
+     *
+     * @param connection This is the connection object that is used to connect to the database.
+     */
     @Override
     public void songs(Connection connection) throws SQLException {
         Scanner scanner = new Scanner(System.in).useDelimiter("[,\\s+]");
@@ -359,6 +400,13 @@ public class SongRepository implements Repository<Song> {
         } while (choice != 8);
     }
 
+    /**
+     * > This function takes a connection object and a song id as input and returns the url of the song with the given id
+     *
+     * @param connection the connection object that is used to connect to the database
+     * @param songId     the id of the song to be fetched
+     * @return The URL of the song
+     */
     public String getURL(Connection connection, int songId) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String getQuery = "SELECT`url`From `jukebox`.`song` where (`song_Id`=?);";
@@ -377,6 +425,13 @@ public class SongRepository implements Repository<Song> {
         return uRL;
     }
 
+    /**
+     * It takes a connection object and an id as input and returns a song object
+     *
+     * @param connection The connection object that is used to connect to the database.
+     * @param id         the id of the song to be fetched
+     * @return The song object is being returned.
+     */
     public Song getById(Connection connection, int id) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String searchQuery = "SELECT*From `jukebox`.`song` where (`song_Id`=?);";

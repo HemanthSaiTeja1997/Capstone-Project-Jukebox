@@ -17,13 +17,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PlayListRepository {
+    /**
+     * It takes a `Connection` object, a `playListName` and a `Song` object as input and inserts the `Song` object into the
+     * `playlist` table
+     *
+     * @param connection   The connection object that is used to connect to the database.
+     * @param playListName The name of the playlist to which the song is to be added.
+     * @param song         The song object that you want to add to the playlist
+     * @return The number of rows affected by the query.
+     */
     public boolean addSongDetails(Connection connection, String playListName, Song song) {
         // 1. write the query for inserting a new Song object into the `playlist` table
         int numberOfRowsAffected;
         try {
 
-            String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlist_name`, `song_Id`," +
-                    " `playlist_url`, `songName`) VALUES (?,?,?,?);";
+            String insertQuery = "INSERT INTO `jukebox`.`playlist` (`playlist_name`, `song_Id`," + " `playlist_url`, `songName`) VALUES (?,?,?,?);";
             // 2. create a statement object
 
             PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
@@ -39,6 +47,12 @@ public class PlayListRepository {
         return numberOfRowsAffected > 0;
     }
 
+    /**
+     * This function is used to display all the playlists in the database
+     *
+     * @param connection This is the connection object that is used to connect to the database.
+     * @return A list of all the playlists in the database.
+     */
     public List<PlayList> displayAllPlaylist(Connection connection) throws SQLException {
         List<PlayList> playLists = new ArrayList<>();
         //create SQL query to retrieve all the rows from the Song table
@@ -59,6 +73,12 @@ public class PlayListRepository {
         return playLists;
     }
 
+    /**
+     * This function is used to display the songs that are in a playlist
+     *
+     * @param connection    The connection object that is used to connect to the database.
+     * @param playlistsName The name of the playlist that the user wants to see the songs of.
+     */
     public void toDisplaySelectedSongFromPlaylist(Connection connection, String playlistsName) throws SQLException {
         //create SQL query to retrieve all the rows from the Song table
         String selectAllSongs = "SELECT `playlist_name`,`song_Id`,`songName` FROM `jukebox`.`playlist` where (`playlist_name`=?);";
@@ -81,6 +101,14 @@ public class PlayListRepository {
 
     }
 
+
+    /**
+     * > This function takes a connection object and a song id as input and returns the url of the song with the given id
+     *
+     * @param connection the connection object that is used to connect to the database
+     * @param songId     the id of the song whose URL we want to fetch
+     * @return The URL of the song is being returned.
+     */
     public String getURL(Connection connection, int songId) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String getQuery = "SELECT`playlist_url`From `jukebox`.`playlist` where (`song_Id`=?);";
