@@ -75,7 +75,7 @@ public class PlayListRepository {
                 String playListSongName = resultSet.getString("playlist_name");
                 String songNameOfPlay = resultSet.getString("songName");
                 // 7. create a song object using the values fetched from the result set
-                System.out.println(songId + "                " + playListSongName + "               " + songNameOfPlay);
+                System.out.println(songId + "                " + songNameOfPlay);
             }
         }
 

@@ -209,7 +209,7 @@ public class SongRepository implements Repository<Song> {
                         playListRepository.displayAllPlaylist(connection).forEach(System.out::println);
                         System.out.println("Enter the playlist Name to display playlist : ");
                         String name8 = scanner.next();
-                        System.out.println("SONG_ID        PLAYLIST_NAME       SONG_NAME  ");
+                        System.out.println("SONG_ID           SONG_NAME  ");
                         playListRepository.toDisplaySelectedSongFromPlaylist(connection, name8);
                         System.out.println("Choose a songId that you wish to listen : ");
                         int songIDThatYouWishToPlay = scanner.nextInt();
