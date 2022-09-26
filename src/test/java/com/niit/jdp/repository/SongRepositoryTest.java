@@ -46,4 +46,14 @@ class SongRepositoryTest {
         Song expectedOutput = songRepository.getSongById(connection, song.getSongId());
         Assertions.assertNotEquals(expectedOutput, actualOutput);
     }
+
+    @Test
+    void getURLSuccess() throws SQLException, ClassNotFoundException {
+        databaseService.connect();
+        Connection connection = databaseService.getConnection();
+        String expectedOutput = "src/main/resources/songs/01-Shippuuden.wav";
+        String actualOutput = songRepository.getURL(connection, 1);
+        Assertions.assertEquals(expectedOutput, actualOutput);
+    }
+
 }
