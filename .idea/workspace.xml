@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="add a getSongByIdFailure test case in the SongRepositoryTest class">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="add a getURLFailure test case in the SongRepositoryTest class">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/PlayListRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,20 +162,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00074" summary=" write the query for selecting a song object from the `song` table">
-      <created>1663776298375</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1663776298375</updated>
-    </task>
-    <task id="LOCAL-00075" summary="create a statement object">
-      <created>1663776421046</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1663776421046</updated>
     </task>
     <task id="LOCAL-00076" summary="set the values of the query parameters">
       <created>1663776562794</created>
@@ -506,7 +492,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664153991686</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="add a getURLSuccess test case in the SongRepositoryTest class">
+      <created>1664154459306</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1664154459306</updated>
+    </task>
+    <task id="LOCAL-00124" summary="add a getURLFailure test case in the SongRepositoryTest class">
+      <created>1664154571919</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1664154571919</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -525,8 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created a test case for  printConnectionStatus and connectFailure" />
-    <MESSAGE value="added the failur condition for printconnectionstatus" />
     <MESSAGE value="added the changes in the code" />
     <MESSAGE value="added the displayAllPlayList" />
     <MESSAGE value="added syntax changes" />
@@ -550,7 +548,9 @@
     <MESSAGE value="added the jdocs" />
     <MESSAGE value="add a getSongByIdSuccess test case in the SongRepositoryTest class" />
     <MESSAGE value="add a getSongByIdFailure test case in the SongRepositoryTest class" />
-    <option name="LAST_COMMIT_MESSAGE" value="add a getSongByIdFailure test case in the SongRepositoryTest class" />
+    <MESSAGE value="add a getURLSuccess test case in the SongRepositoryTest class" />
+    <MESSAGE value="add a getURLFailure test case in the SongRepositoryTest class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a getURLFailure test case in the SongRepositoryTest class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
