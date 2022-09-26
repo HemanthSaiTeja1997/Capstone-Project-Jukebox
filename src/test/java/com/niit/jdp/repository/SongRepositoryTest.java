@@ -37,4 +37,13 @@ class SongRepositoryTest {
         Song expectedOutput = songRepository.getSongById(connection, actualOutput.getSongId());
         Assertions.assertEquals(expectedOutput, actualOutput);
     }
+
+    @Test
+    void getSongByIdFailure() throws SQLException, ClassNotFoundException {
+        databaseService.connect();
+        Connection connection = databaseService.getConnection();
+        Song actualOutput = null;
+        Song expectedOutput = songRepository.getSongById(connection, song.getSongId());
+        Assertions.assertNotEquals(expectedOutput, actualOutput);
+    }
 }

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="added the jdocs">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="f9f68025-4f2a-448a-8ccb-25323afa6cc8" name="Changes" comment="add a getSongByIdSuccess test case in the SongRepositoryTest class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jdp/repository/SongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jdp/repository/SongRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <recent name="com.niit.jdp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SongRepositoryTest.getSongById">
+  <component name="RunManager" selected="JUnit.SongRepositoryTest.getSongByIdFailure">
     <configuration name="JukeboxImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.JukeboxImplementation" />
       <module name="Capstone-Project-Jukebox" />
@@ -94,22 +92,6 @@
       <option name="PACKAGE_NAME" value="com.niit.jdp.service" />
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.service.DatabaseServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DatabaseServiceTest.printConnectionStatusFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Capstone-Project-Jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jdp.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jdp.service" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.service.DatabaseServiceTest" />
-      <option name="METHOD_NAME" value="printConnectionStatusFailure" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,13 +128,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SongRepositoryTest.getSongByIdFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Capstone-Project-Jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jdp.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.SongRepositoryTest" />
+      <option name="METHOD_NAME" value="getSongByIdFailure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SongRepositoryTest.getSongByIdFailure" />
         <item itemvalue="JUnit.SongRepositoryTest.getSongById" />
         <item itemvalue="Application.JukeboxImplementation" />
         <item itemvalue="JUnit.SongRepositoryTest.getAllSongs" />
         <item itemvalue="JUnit.DatabaseServiceTest" />
-        <item itemvalue="JUnit.DatabaseServiceTest.printConnectionStatusFailure" />
       </list>
     </recent_temporary>
   </component>
@@ -164,13 +162,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663674733842</updated>
-    </task>
-    <task id="LOCAL-00072" summary="created a method to search By Album and Sort By Name">
-      <created>1663775400595</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1663775400596</updated>
     </task>
     <task id="LOCAL-00073" summary="select song list from song table by genre name in song.sql">
       <created>1663776231531</created>
@@ -508,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664136423688</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="add a getSongByIdSuccess test case in the SongRepositoryTest class">
+      <created>1664153618723</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1664153618724</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -527,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created DatabaseServiceTest class in test folder in service package" />
     <MESSAGE value="added the test case for connect test case" />
     <MESSAGE value="created a test case for  printConnectionStatus and connectFailure" />
     <MESSAGE value="added the failur condition for printconnectionstatus" />
@@ -552,7 +549,8 @@
     <MESSAGE value="added the changes" />
     <MESSAGE value="optimized the code" />
     <MESSAGE value="added the jdocs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the jdocs" />
+    <MESSAGE value="add a getSongByIdSuccess test case in the SongRepositoryTest class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a getSongByIdSuccess test case in the SongRepositoryTest class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
