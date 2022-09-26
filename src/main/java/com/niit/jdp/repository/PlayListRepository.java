@@ -16,7 +16,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayListRepository {
+public class PlayListRepository implements FunctionalRepository {
     /**
      * It takes a `Connection` object, a `playListName` and a `Song` object as input and inserts the `Song` object into the
      * `playlist` table

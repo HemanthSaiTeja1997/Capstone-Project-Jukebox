@@ -33,7 +33,8 @@ public class SongRepository implements Repository<Song> {
     @Override
     public boolean addSongDetails(Connection connection, Song song) throws SQLException {
         // 1. write the query for inserting a new Song object into the `song` table
-        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`," + " `genre`, `duration`,`url`) VALUES (?,?,?,?,?,?,?);";
+        String insertQuery = "INSERT INTO `jukebox`.`song` (`song_Id`, `name`, `album`, `artist`," +
+                " `genre`, `duration`,`url`) VALUES (?,?,?,?,?,?,?);";
         // 2. create a statement object
         int numberOfRowsAffected;
         try (PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
