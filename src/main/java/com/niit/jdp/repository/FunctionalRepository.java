@@ -5,5 +5,5 @@ import java.sql.SQLException;
 
 @FunctionalInterface
 public interface FunctionalRepository {
-    public void toDisplaySelectedSongFromPlaylist(Connection connection, String playlistsName) throws SQLException;
+     void toDisplaySelectedSongFromPlaylist(Connection connection, String playlistsName) throws SQLException;
 }
