@@ -51,7 +51,7 @@ public class SongRepository implements Repository<Song> {
     }
 
     /**
-     * It creates a SQL query to select all the rows from the Song table, executes the query using the connection object,
+     * It create a SQL query to select all the rows from the Song table, executes the query using the connection object,
      * iterates over the result set and creates a Song object for each row and returns the list of Song objects
      *
      * @param connection This is the connection object that we created in the main method.
@@ -195,7 +195,7 @@ public class SongRepository implements Repository<Song> {
     /**
      * This function is used to display all the songs from the song menu and play any song, display all the songs from the
      * playlist menu and play any song, add a new song list to the database by the owner of the jukebox, search by artist
-     * name, search by genre, search by album, select the song id to add into playlist from above song list and exit
+     * name, search by genre, search by album, select the song id to add into playlist from the above song list and exit
      *
      * @param connection This is the connection object that is used to connect to the database.
      */
@@ -267,7 +267,7 @@ public class SongRepository implements Repository<Song> {
                         }
                         break;
                     case 3:
-                        System.out.println("you can add song to song list only if you are owner of this jukebox");
+                        System.out.println("you can add song to song list only if you are owner of this jukebox(Expected Password)");
                         System.out.println("Enter the USER PASSWORD");
                         int password = scanner.nextInt();
                         if (password == 123456789) {
@@ -291,7 +291,7 @@ public class SongRepository implements Repository<Song> {
                             songRepository.addSongDetails(connection, song);
                             System.out.println("\u001B[32mA New Song List Entered successfully.\u001B[0m");
                         } else {
-                            System.err.println("ENTERED WRONG PASSWORD");
+                            System.err.println("ENTERED WRONG PASSWORD :CAN'T ADD SONG TO SONG LIST");
                         }
                         break;
                     case 4:
@@ -426,7 +426,7 @@ public class SongRepository implements Repository<Song> {
     }
 
     /**
-     * It takes a connection object and an id as input and returns a song object
+     * It takes a connection object, and an id as input and returns a song object
      *
      * @param connection The connection object that is used to connect to the database.
      * @param id         the id of the song to be fetched

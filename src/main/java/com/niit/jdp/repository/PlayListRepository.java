@@ -92,7 +92,6 @@ public class PlayListRepository {
             while (resultSet.next()) {
                 // 6. fetch the values of the current row from the result set
                 int songId = resultSet.getInt("song_Id");
-                String playListSongName = resultSet.getString("playlist_name");
                 String songNameOfPlay = resultSet.getString("songName");
                 // 7. create a song object using the values fetched from the result set
                 System.out.println(songId + "                " + songNameOfPlay);
