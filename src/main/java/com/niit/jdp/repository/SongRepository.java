@@ -24,7 +24,7 @@ public class SongRepository implements Repository<Song> {
     MusicPlayerService music = new MusicPlayerService();
 
     /**
-     * It takes a `Connection` object and a `Song` object as parameters, and returns a boolean value
+     * It takes a `Connection` object and a `Song` object as parameters and returns a boolean value
      *
      * @param connection The connection object that is used to connect to the database.
      * @param song       The Song object that needs to be added to the database.
@@ -306,7 +306,7 @@ public class SongRepository implements Repository<Song> {
                         songRepository.searchByArtistAndSortByName(connection, artistName).forEach(System.out::println);
                         System.out.println("Choose a songId form Artist you wish to listen");
                         int songIdThatYouWantToChooseFromArtistList = scanner.nextInt();
-                        songRepository.getById(connection, songIdThatYouWantToChooseFromArtistList);
+                        songRepository.getSongById(connection, songIdThatYouWantToChooseFromArtistList);
                         String urlOfSongIdFromArtistThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromArtistList);
                         System.out.println("\u001B[32m Enter 1 to play : Enter 0 to Exit\u001B[0m");
                         int option2 = scanner.nextInt();
@@ -329,7 +329,7 @@ public class SongRepository implements Repository<Song> {
                         songRepository.searchByGenreAndSortByName(connection, genreName).forEach(System.out::println);
                         System.out.println("Choose a songId form Genre you wish to listen");
                         int songIdThatYouWantToChooseFromGenre = scanner.nextInt();
-                        songRepository.getById(connection, songIdThatYouWantToChooseFromGenre);
+                        songRepository.getSongById(connection, songIdThatYouWantToChooseFromGenre);
                         String urlOfSongIdFromGenreThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromGenre);
                         System.out.println("\u001B[32m Enter 1 to play : Enter 0 to Exit\u001B[0m");
                         int option3 = scanner.nextInt();
@@ -352,7 +352,7 @@ public class SongRepository implements Repository<Song> {
                         songRepository.searchByAlbumAndSortByName(connection, albumName).forEach(System.out::println);
                         System.out.println("Choose a songId form Album you wish to listen");
                         int songIdThatYouWantToChooseFromAlbum = scanner.nextInt();
-                        songRepository.getById(connection, songIdThatYouWantToChooseFromAlbum);
+                        songRepository.getSongById(connection, songIdThatYouWantToChooseFromAlbum);
                         String urlOfSongIdFromAlbumThatToPlay = songRepository.getURL(connection, songIdThatYouWantToChooseFromAlbum);
                         System.out.println("\u001B[32m Enter 1 to play : Enter 0 to Exit\u001B[0m");
                         int option4 = scanner.nextInt();
@@ -375,7 +375,7 @@ public class SongRepository implements Repository<Song> {
                         String input = scanner.next();
                         String[] numbers = input.split(" ");
                         for (String songID : numbers) {
-                            Song song3 = songRepository.getById(connection, Integer.parseInt(songID));
+                            Song song3 = songRepository.getSongById(connection, Integer.parseInt(songID));
                             boolean result;
                             result = playListRepository.addSongDetails(connection, playlistName, song3);
                             if (result) {
@@ -432,7 +432,7 @@ public class SongRepository implements Repository<Song> {
      * @param id         the id of the song to be fetched
      * @return The song object is being returned.
      */
-    public Song getById(Connection connection, int id) throws SQLException {
+    public Song getSongById(Connection connection, int id) throws SQLException {
         // 1. write the query for selecting a song object from the `song` table
         String searchQuery = "SELECT*From `jukebox`.`song` where (`song_Id`=?);";
         Song song = new Song();
