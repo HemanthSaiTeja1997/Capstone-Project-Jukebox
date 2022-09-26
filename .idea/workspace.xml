@@ -67,7 +67,23 @@
       <recent name="com.niit.jdp.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayListRepositoryTest.getURLSuccess">
+  <component name="RunManager" selected="JUnit.PlayListRepositoryTest.getURLFailure">
+    <configuration name="PlayListRepositoryTest.getURLFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Capstone-Project-Jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jdp.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.PlayListRepositoryTest" />
+      <option name="METHOD_NAME" value="getURLFailure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PlayListRepositoryTest.getURLSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Capstone-Project-Jukebox" />
       <extension name="coverage">
@@ -95,22 +111,6 @@
       <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
       <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.PlayListRepositoryTest" />
       <option name="METHOD_NAME" value="toDisplaySelectedSongFromPlaylistSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SongRepositoryTest.getSongByIdFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Capstone-Project-Jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jdp.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jdp.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jdp.repository.SongRepositoryTest" />
-      <option name="METHOD_NAME" value="getSongByIdFailure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayListRepositoryTest.getURLFailure" />
         <item itemvalue="JUnit.PlayListRepositoryTest.getURLSuccess" />
         <item itemvalue="JUnit.PlayListRepositoryTest.toDisplaySelectedSongFromPlaylistSuccess" />
         <item itemvalue="JUnit.SongRepositoryTest.getURLFailure" />
         <item itemvalue="JUnit.SongRepositoryTest.getURLSuccess" />
-        <item itemvalue="JUnit.SongRepositoryTest.getSongByIdFailure" />
       </list>
     </recent_temporary>
   </component>

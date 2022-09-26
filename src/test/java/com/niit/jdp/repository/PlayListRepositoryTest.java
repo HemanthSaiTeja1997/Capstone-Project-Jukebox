@@ -39,5 +39,13 @@ class PlayListRepositoryTest {
         Assertions.assertEquals(expectedOutput, actualOutput);
     }
 
+    @Test
+    void getURLFailure() throws SQLException, ClassNotFoundException {
+        databaseService.connect();
+        Connection connection = databaseService.getConnection();
+        String expectedOutput = "src/main/resources/songs/03-Homecoming";
+        String actualOutput = playListRepository.getURL(connection, 3);
+        Assertions.assertNotEquals(expectedOutput, actualOutput);
+    }
 
 }
